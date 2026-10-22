@@ -35,3 +35,7 @@ Then ask: `/slopify a landing page for Notion` or `/slopify` and let it roll.
 ## Rules it follows
 Parodies of real brands are labeled unofficial, and all fake malware/scams are just divs. The page respects
 `prefers-reduced-motion`, and nothing chaotic happens before the visitor's first click.
+
+---
+
+slopped by [@icantcodefyi](https://x.com/icantcodefyi) 🌭

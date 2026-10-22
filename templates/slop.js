@@ -202,7 +202,7 @@
     }, true);
   }
 
-  function wheel(prizes = ['1 FREE THING', '47s WITH STEVE'], { title = 'Prize Wheel (not rigged)' } = {}) {
+  function wheel(prizes = ['1 FREE THING', '47s WITH ICANTCODEFYI'], { title = 'Prize Wheel (not rigged)' } = {}) {
     const slices = Array.from({ length: 8 }, (_, i) => prizes[i % prizes.length]);
     const html = `<div class="slop-wheel-wrap"><div class="slop-pointer">▼</div><div class="slop-wheel">${slices.map((s, i) => `<span style="--i:${i}">${esc(s)}</span>`).join('')}</div></div><p class="slop-wmsg"></p>`;
     const p = modal({ title, html, buttons: ['SPIN'] });
