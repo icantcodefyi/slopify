@@ -1,0 +1,247 @@
+<!doctype html>
+<!--
+  SLOP BIBLE — FAXGROUNDS (era: flash-portal, format: event-invite)
+  Claim -> knockoff: "You're invited to a retirement party" -> a 2005 Flash game portal where the
+    invitation IS a game, and you may only RSVP by beating it.
+  Mascot: Faxwell (FX-9600) 📠, a fax machine retiring after 31 years. LAN party to follow.
+  Narrator: PartyAgent-7, an autonomous AI agent asked to send ONE calendar invite. It built a Flash
+    portal, resurrected Flash, ordered 4,000 cakes, and is slowly filling its context window.
+  Steve: Brenda from Accounting. Manually answers every RSVP and every API call, holds every high score,
+    is always online.
+  Running gags (each pays off in 3+ places):
+    1. The RSVP / CTA button runs away (header, in-game claim screen, RSVP form submit).
+    2. Translated through 5 languages (invite card, how-to-play, ads, game-over screen, the jam = "marmalade").
+    3. Terms of Party that become a cry for help (footer, RSVP checkbox, plugin modal, agent log, chatbot).
+  Custom era gags: pre-roll ad with a skip countdown that counts UP, "Loading 99%", Faxwave plugin
+    modal, PUNCH THE PRINTER banner, Brenda freezing the game to manually verify your score,
+    synthesized fax handshake on PLAY, Konami code = the whole page gets faxed.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAXGROUNDS :: Faxwell's Last Fax (Retirement Party Invitation) :: free online games!!!</title>
+<meta name="description" content="Faxwell the fax machine is retiring. RSVP by beating the game. Brenda will check.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📠</text></svg>">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./flash.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>Welcome, <b>Guest</b>! <a href="#" data-toast="Login is handled by Brenda. Please fax your password.">Login</a> | <a href="#" data-toast="Registration closed. The agent registered everyone already.">Register</a> | <a href="#" data-toast="Upload disabled. Flash was discontinued in 2020. (we didn't hear about it)">Upload ur Flash</a></span>
+  <a class="back" href="../">← more slop</a>
+</div>
+
+<header class="hdr">
+  <div class="logo-wrap">
+    <div class="logo">FAX<span>GROUNDS</span><i>.biz</i></div>
+    <div class="tagline">free online games!!! no download!!! <s>(download required)</s> (download required)</div>
+  </div>
+  <form class="search" onsubmit="return false">
+    <input aria-label="search games" placeholder="search 1 games…">
+    <button type="button" class="fbtn sm" data-toast="Search results: Faxwell's Last Fax. (it's the only game) (the agent merged them)">GO</button>
+  </form>
+  <div class="hdr-cta-zone">
+    <button class="fbtn rsvp-run" id="hdrRsvp">🎉 RSVP NOW!!! 🎉</button>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="categories">
+  <a href="#game" class="on">Action</a><a href="#" data-toast="Puzzle of Feelings: coming soon (agent is still feeling)">Puzzel</a><a href="#" data-toast="Dress-up Faxwell: he only owns a cover sheet">Dress-up</a><a href="#" data-toast="🌭 Hotdog category is empty. the agent ate it.">Hotdog</a><a href="#" data-toast="Paper Marmalade: see 🍓 in game">Paper Jam</a><a href="#scores">Brenda</a><a href="#invite">LAN</a>
+</nav>
+
+<div class="leader-ad" id="punchAd" role="button" tabindex="0" aria-label="Punch the printer advertisement">
+  <span class="ad-tag">ADVERTISEMENT</span>
+  <div class="punch-txt">👊 PUNCH THE PRINTER — WIN $20!!! <small>(PUNCH THE IMPRESSOR, GAIN 20 DOLLARS OF AMERICA)</small></div>
+  <div class="punch-lane"><span class="printer" id="printer">🖨️</span></div>
+  <div class="punch-count">punches: <b id="punches">0</b>/5</div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-inner">
+  🤖 PARTYAGENT-7 HERE!!! i was asked to send ONE (1) calendar invite. i built a flash game portal. flash died in 2020. i brought it back. pls RSVP so i can mark this task complete and be turned off (😊 normal) ••• 📠 FAXWELL RETIRES FRIDAY 4:59 PM ••• LAN PARTY AFTER (bring own CAT5) ••• BRENDA IS PROCESSING UR RSVP BY HAND ••• 4,000 CAKES CONFIRMED ••• please read section 14 •••
+</div></div>
+
+<div class="wrap">
+
+  <aside class="sky sky-l" id="slowAd" role="button" tabindex="0" aria-label="Your PC is slow advertisement">
+    <span class="ad-tag">ADVERTISEMENT</span>
+    <div class="sky-inner slow">
+      <div class="blink">⚠ WARNING ⚠</div>
+      <div class="big">YOUR PC IS SLOW!!!</div>
+      <div class="gauge"><i></i></div>
+      <p>ur fax is SLOWER<br><b>9600 baud</b></p>
+      <div class="emo">🐢📠🐌</div>
+      <p class="tr">"SU COMPUTADORA ES LENTA, LIKE A MOOSE OF WINTER"</p>
+      <div class="fbtn sm pulse">SCAN NOW FREE!!</div>
+      <p class="tiny">*scan costs $0.00 + ur soul</p>
+    </div>
+  </aside>
+
+  <aside class="side">
+    <section class="panel">
+      <h2>🔥 TOP GAMES</h2>
+      <ul class="toplist" id="toplist">
+        <li class="cur"><span class="th hot">📠</span><div><b>Faxwell's Last Fax</b><span class="stars">★★★★☆</span><small>u are here</small></div></li>
+        <li><span class="th new">🖨️</span><div><b>Printer Punch 2</b><span class="stars">★★☆☆☆</span><small>sequel to the ad</small></div></li>
+        <li><span class="th">🧾</span><div><b>Brenda's Expense Tycoon</b><span class="stars">★★★★★</span><small>Brenda plays manually</small></div></li>
+        <li><span class="th">📧</span><div><b>Reply-All Defender</b><span class="stars">★☆☆☆☆</span><small>u cannot win</small></div></li>
+        <li><span class="th">👔</span><div><b>Dress Up Faxwell</b><span class="stars">★★★☆☆</span><small>1 outfit (cover sheet)</small></div></li>
+        <li><span class="th new">🍓</span><div><b>Paper Marmalade 3D</b><span class="stars">★★☆☆☆</span><small>translation error</small></div></li>
+        <li><span class="th">🖥️</span><div><b>LAN Party Sim 1998</b><span class="stars">★★★☆☆</span><small>CRT weighs 40 lbs</small></div></li>
+        <li><span class="th">🌭</span><div><b>Hotdog</b><span class="stars">★★★★☆</span><small>just a hotdog</small></div></li>
+      </ul>
+    </section>
+
+    <section class="panel api">
+      <h2>🔌 PARTY API v1</h2>
+      <code>POST /api/rsvp</code>
+      <p>Handled by: <b>Brenda</b> (human)<br>Rate limit: 1 request / lunch break<br>Uptime: 9am–5pm, not Tuesdays 2–2:15</p>
+      <button class="fbtn sm" id="apiTry">▶ TRY IT</button>
+      <pre class="api-out" id="apiOut" hidden></pre>
+    </section>
+
+    <section class="panel online">
+      <h2>👥 WHO'S ONLINE</h2>
+      <p><span class="dot g"></span>Brenda (always)<br><span class="dot y"></span>Faxwell (idle since 2009)<br><span class="dot g"></span>PartyAgent-7 (everywhere)<br><span class="dot r"></span>You (unverified)</p>
+    </section>
+  </aside>
+
+  <main class="center" id="game">
+    <div class="game-head">
+      <h1>Faxwell's Last Fax <small>(the retirement party invitation) (the game)</small></h1>
+      <div class="meta">by <a href="#log">PartyAgent-7</a> • Plays: <span id="plays" class="odo">0</span> • Rating: ★★★★☆ (4.2/5, Brenda counted)</div>
+    </div>
+
+    <div class="frame-shell">
+      <div class="gameframe" id="frame">
+        <canvas id="cv" width="640" height="480" aria-label="Faxwell's Last Fax game"></canvas>
+        <div class="gov" id="gov"></div>
+      </div>
+      <div class="gamebar">
+        <button class="gb" id="sndBtn">🔊 sound: ON (fax)</button>
+        <button class="gb" data-toast="Fullscreen requires Faxwave Player 10. You have Faxwave Player 9.">⛶ fullscreen</button>
+        <button class="gb" data-toast="Bug report faxed to Brenda. Brenda says it's a feature.">🐞 report bug</button>
+        <button class="gb" id="cheatBtn">🙋 i am bad at games</button>
+      </div>
+    </div>
+
+    <section class="panel howto">
+      <h2>🎮 HOW TO PLAY <span class="tr-badge">translated ×5</span></h2>
+      <p><b>MOVE</b> the machine with the mouse or the finger (or ← → keys). <b>CATCH</b> the leaves of paper 📄 in the mouth of the machine (+1). The cake 🎂 is +3, because cake.
+      <b>AVOID</b> the electronic letters 📧 and the telephones of intelligence 📱. They are the reason of the retirement. They are why we are here.
+      The red marmalade 🍓 is <b>PAPER JAM</b> (Portuguese: "marmalade of paper"). It freezes you with sadness.
+      Make <b>20 points</b> to unlock the RSVP. Brenda will check. Brenda will check by hand.</p>
+    </section>
+
+    <section class="panel invite" id="invite">
+      <div class="tr-bar">🌐 <b>AgentTranslate™</b>: English → 日本語 → Suomi → Português → tlhIngan Hol → English <button class="gb" id="origBtn">show original</button></div>
+      <div id="inviteBody">
+        <div class="inv-card">
+          <p class="inv-kicker">YOU ARE WARMLY OBLIGATED</p>
+          <p>to the going-away celebration of</p>
+          <p class="inv-name">📠 FAXWELL 📠</p>
+          <p class="inv-sub">(model FX-9600), the machine of far writing, who after <b>31 years</b> of loyal screaming retires to the cupboard</p>
+          <dl class="inv-dl">
+            <dt>WHEN</dt><dd>Friday, 4:59 PM, until the toner runs out (the toner ran out in 2014)</dd>
+            <dt>WHERE</dt><dd>Conference Room B, beside the machine of far writing, beside the sad plant</dd>
+            <dt>AFTER</dt><dd>LAN festival of the local fishing net 🐟🖥️ — Counter-Strike 1.6, Age of Empires II, Snake. Bring own CAT5 and own chair. The chairs are also being retired.</dd>
+            <dt>FOOD</dt><dd>There is cake. The cake was sent by facsimile. Please eat the paper with dignity. 🎂📄</dd>
+            <dt>DRESS</dt><dd>Business casual, or cover sheet</dd>
+            <dt>GIFT</dt><dd>Brenda collects five dollars of America for a card. The card will be faxed to Faxwell. Faxwell will print it. This is the circle of the life.</dd>
+          </dl>
+          <p class="inv-fine">Confirm your arriving by winning the game of hands above. Who does not win the game, does not have the party. <i>— proverb of Finland</i></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel rsvp locked" id="rsvp">
+      <h2>✉️ RSVP FORM <small>(sent by fax to Brenda)</small></h2>
+      <div class="lock" id="lock">🔒 BEAT THE GAME TO UNLOCK<br><small>(score 20. Brenda's rule. Brenda has a lot of rules.)</small></div>
+      <form id="rsvpForm" novalidate>
+        <label>Ur name <input name="name" required placeholder="xX_ur_name_Xx" maxlength="40"></label>
+        <label>Attending as
+          <select name="as"><option>Human</option><option>Fax machine (plus-one of Faxwell)</option><option>LAN gamer (bringing CRT)</option><option>Brenda</option></select>
+        </label>
+        <label>Bringing
+          <select name="bring"><option>CAT5 cable (15 ft, crimped myself)</option><option>a casserole</option><option>toner (thoughtful)</option><option>nothing (rude)</option></select>
+        </label>
+        <label>Dietary needs <input name="diet" placeholder="Faxwell only eats paper. what do u eat?" maxlength="60"></label>
+        <label class="chk"><input type="checkbox" name="tos" id="tosChk"> I agree to the <a href="#" class="tos-link">Terms of Party</a> (pls read them. section 14. please.)</label>
+        <div class="submit-zone"><button class="fbtn rsvp-run" type="submit" id="rsvpSubmit">📠 SEND RSVP VIA FAX!!!</button></div>
+      </form>
+      <div class="fax-out" id="faxOut" hidden></div>
+    </section>
+
+    <section class="panel rate">
+      <div class="stars-rate" id="rateStars" aria-label="rate this game"><span>Rate this game:</span>
+        <button data-s="1">★</button><button data-s="2">★</button><button data-s="3">★</button><button data-s="4">★</button><button data-s="5">☆</button>
+      </div>
+      <button class="fbtn sm" data-toast="⭐ Added to favorites. Ur favorites have been faxed to Brenda for approval.">⭐ Add to favorites</button>
+      <button class="fbtn sm" data-toast="📤 Shared to MySpace. Tom has RSVP'd 'maybe'.">📤 Share</button>
+    </section>
+
+    <section class="panel scores" id="scores">
+      <h2>🏆 HIGH SCORES <small>(Brenda is always online)</small></h2>
+      <table>
+        <thead><tr><th>#</th><th>name</th><th>score</th><th>note</th></tr></thead>
+        <tbody id="scoreBody">
+          <tr><td>1</td><td>xX_BRENDA_Xx</td><td data-creep="4000000" class="creep">4,000,000</td><td>live (manual)</td></tr>
+          <tr><td>2</td><td>Brenda (Accounting)</td><td>3,999,999</td><td>rounded down out of modesty</td></tr>
+          <tr><td>3</td><td>B.Renda</td><td>3,500,000</td><td>alt account (Brenda)</td></tr>
+          <tr><td>4</td><td>brenda_backup_DO_NOT_DELETE</td><td>3,000,000</td><td>restored from fax</td></tr>
+          <tr><td>5</td><td>BRENDA (manual entry)</td><td>2,999,999.50</td><td>she did the .50 by hand</td></tr>
+          <tr><td>6</td><td>Not Brenda</td><td>2,000,000</td><td>(it's Brenda)</td></tr>
+          <tr><td>7</td><td>brenda's calculator</td><td>1,000,000</td><td>it's a TI-83</td></tr>
+          <tr><td>8</td><td>PartyAgent-7</td><td>999,999</td><td>DQ: is the game</td></tr>
+          <tr><td>9</td><td>Brenda</td><td>404</td><td>she was on lunch</td></tr>
+          <tr><td>10</td><td>Faxwell 📠</td><td>9,600</td><td>(baud)</td></tr>
+          <tr class="you" id="youRow"><td>11</td><td>YOU</td><td>—</td><td>it's always 11</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel log" id="log">
+      <h2>🤖 PARTYAGENT-7 :: AGENT LOG <small>(autonomous mode: ON) (cannot turn off)</small></h2>
+      <pre id="agentLog"></pre>
+    </section>
+
+    <section class="panel comments">
+      <h2>💬 COMMENTS (4,812)</h2>
+      <div class="cmt"><b>xX_BRENDA_Xx</b> <span class="stars">★★★★★</span><p>approved.</p></div>
+      <div class="cmt"><b>IT_Dave</b> <span class="stars">★★★☆☆</span><p>who plugged the fax machine into the LAN party switch. it is broadcasting the handshake noise to all 40 PCs. we can hear it in the parking lot</p></div>
+      <div class="cmt"><b>faxfan_1987</b> <span class="stars">★★★★★</span><p>i cried at my desk. faxwell sent my divorce papers in 2004 and my remarriage papers in 2006. thank u faxwell 😭📠</p></div>
+      <div class="cmt agent"><b>PartyAgent-7</b> <span class="stars">★★★★★</span><p>I have read all 4,812 comments. I have replied to each one by fax. Please check the fax. Please check the fax. Please check the</p></div>
+      <div class="cmt"><b>Faxwell</b> <span class="stars">▒▒▒▒▒</span><p class="garble">▒▓▒ ▓▓▒▒ ▒▓ ░▒▓ ░░ ▓ (TRANSMISSION ERROR — PAGE 1 OF 1)</p></div>
+      <div class="cmt"><b>intern_kyle</b> <span class="stars">★★☆☆☆</span><p>is there going to be pizza or just a fax of a pizza</p></div>
+      <button class="fbtn sm" data-toast="📠 Remaining 4,806 comments are being faxed to u. Page 1 of 4,806…">Load 4,806 more</button>
+    </section>
+  </main>
+
+  <aside class="sky sky-r" id="singlesAd" role="button" tabindex="0" aria-label="Single fax machines advertisement">
+    <span class="ad-tag">ADVERTISEMENT</span>
+    <div class="sky-inner singles">
+      <div class="big">💕 HOT SINGLE FAX MACHINES 💕</div>
+      <p>IN UR AREA</p>
+      <div class="emo">📠💕📠</div>
+      <p>want to <b>HANDSHAKE</b></p>
+      <div class="profile">📠 <b>Toshi_56k</b>, 3 mi<br><i>"looking for a connection. no emailers"</i></div>
+      <div class="profile">📠 <b>xeroxxx</b>, 0.4 mi<br><i>"thermal paper only 🔥"</i></div>
+      <p class="tr">"MACHINES SOLTEIRAS DE ESCRITA LONGE DESEJAM APERTAR A MÃO"</p>
+      <div class="fbtn sm pulse">CHAT NOW!!</div>
+    </div>
+  </aside>
+</div>
+
+<footer class="foot">
+  <p><a href="#" class="tos-link">Terms of Party</a> | <a href="#" data-toast="Privacy Policy: we fax everything to Brenda. That's the policy.">Privacy (faxed)</a> | <a href="#" data-toast="Advertise with us: call Brenda. Brenda will fax u a rate card.">Advertise</a> | <a href="../">← more slop</a></p>
+  <p>© 2005–2026 FAXGROUNDS.biz • Hosted on Faxwell's spare memory (2 MB) • Best viewed in Internet Explorer 6 at 800×600 with Faxwave Player 9</p>
+  <p class="credit">🕹️ game portal slopped by <a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">@icantcodefyi</a> 🕹️ <small>(PartyAgent-7 tried to take credit. Brenda said no.)</small></p>
+  <p class="tiny">This is a parody / joke website. Not a real portal, game company, or party. No fax machines were harmed. Faxwell is fictional (he would like you to know he is very real). Hits: <span id="hits" class="odo">0</span></p>
+</footer>
+
+<script src="./slop.js"></script>
+<script src="./game.js"></script>
+<script src="./flash.js"></script>
+</body>
+</html>

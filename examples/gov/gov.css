@@ -1,0 +1,209 @@
+/* gov.css: Dept. of Traffic Cone Innovation, circa 2001. No rounded corners. One blinking NEW!. */
+:root {
+  --slop-font: Arial, Helvetica, sans-serif;
+  --slop-win-bg: #eeeeee;
+  --slop-win-fg: #000;
+  --slop-title-bg: #003366;
+  --slop-title-fg: #fff;
+  --slop-border: inset 0 0 0 1px #999;
+  --slop-radius: 0;
+  --slop-shadow: 4px 4px 0 #666;
+  --slop-btn-bg: #dddddd;
+  --slop-btn-fg: #000;
+  --slop-accent: #990000;
+  --slop-toast-bg: #ffffcc;
+  --slop-toast-fg: #000;
+}
+
+html { background: #d8d8d8; }
+body {
+  margin: 0; padding: 10px 0 30px;
+  font: 12px/1.45 Arial, Helvetica, sans-serif; color: #000;
+  background: #d8d8d8 repeating-linear-gradient(0deg, transparent 0 3px, #d0d0d0 3px 4px);
+}
+a { color: #0000ee; }
+a:visited { color: #551a8b; }
+h1, h2, h3 { font-family: "Times New Roman", Times, serif; color: #003366; font-weight: bold; }
+h2 { font-size: 20px; margin: 14px 0 6px; border-bottom: 1px solid #003366; }
+h3 { font-size: 16px; margin: 18px 0 6px; background: #e6ecf2; border-left: 6px solid #003366; padding: 2px 6px; }
+small, .small { font-size: 11px; }
+.pp { font-size: 10px; color: #666; font-style: italic; font-weight: normal; }
+.center-txt { text-align: center; }
+
+.backlink {
+  position: fixed; top: 4px; right: 4px; z-index: 50;
+  font: 11px Arial, sans-serif; background: #ffffcc; border: 1px solid #999; padding: 2px 6px;
+}
+
+/* ---------- page table ---------- */
+.page {
+  width: 760px; max-width: 100%; margin: 0 auto; background: #fff;
+  border: 1px solid #999; border-collapse: collapse; table-layout: fixed;
+}
+.hdr { background: #fff; padding: 0; border-bottom: 4px solid #660000; }
+.hdr-inner { width: 100%; border-collapse: collapse; }
+.crest-cell { width: 116px; padding: 8px 4px 8px 10px; }
+.crest { width: 104px; height: 104px; display: block; }
+.title-cell { padding: 6px 10px 8px 6px; vertical-align: bottom; }
+.util { text-align: right; font-size: 11px; color: #666; margin-bottom: 10px; }
+.util a { color: #666; }
+.state { font: bold 11px Arial, sans-serif; letter-spacing: 2px; color: #660000; }
+h1 { font-size: 28px; margin: 2px 0 2px; line-height: 1.05; }
+.subdept { font: italic 14px "Times New Roman", serif; color: #333; }
+
+.c-left { width: 158px; } .c-right { width: 150px; }
+.band { background: #660000; color: #fff; font-size: 11px; padding: 3px 8px; }
+.band-in {
+  display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap;
+}
+.band a { color: #ffcc99; }
+
+.cols > td { vertical-align: top; }
+.leftnav { width: 158px; background: #eeeeee; border-right: 1px solid #999; padding: 0 0 10px; }
+.navhead, .boxhead { background: #003366; color: #fff; font-weight: bold; padding: 3px 6px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.leftnav ul { margin: 6px 0; padding-left: 20px; }
+.leftnav ul ul { margin: 2px 0 4px; padding-left: 14px; list-style: square; }
+.leftnav li { margin: 3px 0; }
+.leftnav .internal { margin-top: 10px; font-size: 10px; color: #990000; font-weight: bold; list-style: none; margin-left: -12px; }
+.leftnav .internal ul { font-weight: normal; font-size: 12px; }
+.navnote { font-size: 10px; color: #666; padding: 0 8px; }
+hr { border: 0; border-top: 1px solid #999; border-bottom: 1px solid #fff; margin: 8px 6px; }
+
+.center { padding: 10px 14px 14px; }
+.right { width: 150px; background: #eeeeee; border-left: 1px solid #999; padding: 8px 6px; }
+
+/* ---------- center components ---------- */
+.notice { border: 2px solid #cc0000; background: #fff0f0; padding: 6px 8px; color: #000; }
+.notice b { color: #cc0000; }
+
+.welcome { width: 100%; border-collapse: collapse; }
+.welcome p { margin: 0 0 8px; }
+.conebox { width: 120px; padding-right: 10px; text-align: center; }
+.cap { font-size: 10px; color: #444; margin-top: 4px; }
+.leak { font-family: "Comic Sans MS", "Comic Sans", cursive; color: #0033cc; font-size: 13px; transform: rotate(-1.5deg); }
+
+/* CSS traffic cone, low budget, high compliance */
+.cone-art { width: 90px; height: 120px; margin: 0 auto; position: relative; border: 1px solid #999; background: #f4f4f4; }
+.cone-art .tip, .cone-art .stripe, .cone-art .body { position: absolute; left: 50%; transform: translateX(-50%); }
+.cone-art .tip { top: 10px; width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-bottom: 34px solid #ff6600; }
+.cone-art .stripe { top: 44px; width: 38px; height: 16px; background: #fff; box-shadow: inset 0 0 0 1px #ddd; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }
+.cone-art .body { top: 60px; width: 54px; height: 36px; background: #ff6600; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }
+.cone-art .base { position: absolute; left: 10px; right: 10px; bottom: 12px; height: 10px; background: #222; }
+
+.news { margin: 0; }
+.news dt { font-weight: bold; color: #003366; margin-top: 6px; }
+.news dd { margin: 0 0 0 16px; }
+.newgif { background: #ff0000; color: #ffff00; font: bold 10px Arial; padding: 0 3px; animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { visibility: hidden; } }
+
+.grid { width: 100%; border-collapse: collapse; margin: 6px 0; }
+.grid th, .grid td { border: 1px solid #999; padding: 3px 5px; text-align: left; vertical-align: top; }
+.grid th { background: #cccccc; font-size: 11px; }
+.grid tr:nth-child(even) td { background: #f5f5f5; }
+
+.steps { padding-left: 20px; }
+.steps li { margin: 3px 0; }
+.steps .here { background: #ffffcc; }
+.steps .you { color: #cc0000; font-weight: bold; font-size: 11px; }
+.steps .skip { list-style: none; color: #666; font-style: italic; margin-left: -10px; }
+
+/* ---------- form from hell ---------- */
+.formbox { border: 1px solid #666; background: #f8f8f0; margin: 6px 0; }
+.formhdr { background: #cccccc; border-bottom: 1px solid #666; font: bold 10px "Courier New", monospace; padding: 3px 6px; }
+.ftable { width: 100%; border-collapse: collapse; }
+.ftable td { padding: 4px 6px; vertical-align: top; }
+.ftable td:first-child { width: 42%; font-weight: bold; text-align: right; }
+.ftable input:not([type]), .ftable select { width: 100%; box-sizing: border-box; font: 12px Arial; border: 2px inset #ccc; padding: 2px; background: #fff; }
+.ftable td.checks { text-align: left; font-weight: normal; padding-left: 12px; }
+.req { color: #cc0000; }
+.fbtns { padding: 6px; text-align: center; border-top: 1px dashed #999; }
+.govbtn {
+  font: 12px Arial; background: #dddddd; color: #000; border: 2px outset #eee; padding: 3px 10px; cursor: pointer; margin: 2px;
+}
+.govbtn:active { border-style: inset; }
+.govbtn.big { font-weight: bold; font-size: 14px; background: #ffcc00; padding: 5px 16px; }
+
+.formout { border-top: 1px solid #666; padding: 10px; background: #fff; }
+.proc { font: 12px "Courier New", monospace; }
+.cert { border: 4px double #003366; padding: 10px; text-align: center; background: #fffef4; font-family: "Times New Roman", serif; }
+.cert h4 { margin: 0 0 4px; font-size: 18px; color: #003366; letter-spacing: 1px; }
+.cert .big-cone { font-size: 44px; line-height: 1.1; }
+.cert table { margin: 6px auto; border-collapse: collapse; font-size: 13px; text-align: left; }
+.cert td { padding: 1px 6px; border-bottom: 1px dotted #999; }
+.cert .stamp { display: inline-block; border: 3px solid #cc0000; color: #cc0000; font: bold 14px Arial; padding: 2px 8px; transform: rotate(-8deg); margin: 6px 0; }
+.cert-cap { text-align: center; font-weight: bold; margin: 6px 0; }
+
+/* ---------- progress bars (they go backwards, this is intended) ---------- */
+.pbar-label { font-weight: bold; margin-top: 8px; }
+.pbar { position: relative; height: 20px; border: 1px solid #666; background: #fff; margin: 4px 0; }
+.pbar.mini { height: 14px; }
+.pfill { height: 100%; width: 67%; background: repeating-linear-gradient(90deg, #003366 0 10px, #336699 10px 12px); transition: width .8s; }
+.pbar span { position: absolute; inset: 0; text-align: center; font: bold 11px/20px Arial; color: #000; mix-blend-mode: difference; filter: invert(1); }
+.pbar.mini span { line-height: 14px; font-size: 10px; }
+.tiers { margin-top: 10px; }
+
+.pubs li { margin: 3px 0; }
+
+.tos { height: 150px; overflow-y: scroll; border: 2px inset #ccc; background: #fff; padding: 4px 8px; font: 11px "Courier New", monospace; }
+.tos ol { padding-left: 24px; margin: 4px 0; }
+.tos li { margin: 3px 0; }
+
+/* ---------- right column ---------- */
+.box { border: 1px solid #999; background: #fff; margin-bottom: 8px; }
+.box ul { margin: 4px 0; padding-left: 18px; }
+.box > div.small { padding: 2px 5px; }
+.box .pbar { margin: 3px 5px; }
+.badge {
+  margin: 10px auto 2px; width: 88px; text-align: center; font: bold 16px/1 Arial; padding: 6px 0;
+  border: 2px outset #ccc;
+}
+.badge small { font-size: 10px; letter-spacing: 2px; }
+.y2k { background: linear-gradient(#000 0 50%, #222 50%); color: #00ff00; font-family: "Courier New", monospace; }
+.ppbadge { background: #ff6600; color: #fff; border-color: #ffaa66; transform: rotate(-3deg); }
+
+/* ---------- footer ---------- */
+.footer { padding: 4px 14px 14px; text-align: center; font-size: 11px; background: #fff; }
+hr.shaded { border-top: 2px solid #999; border-bottom: 2px solid #eee; margin: 6px 0 10px; }
+.footlinks { margin-bottom: 6px; }
+.hits { font: bold 13px "Courier New", monospace; background: #000; color: #0f0; padding: 0 4px; letter-spacing: 2px; }
+.legal { color: #444; text-align: justify; }
+
+/* ---------- Homework Mode overlay (custom gag) ---------- */
+.homework[hidden] { display: none; }
+.homework { position: fixed; inset: 0; z-index: 9500; background: #888; overflow: auto; padding: 20px 10px; }
+.paper {
+  max-width: 560px; margin: 0 auto; background: #fff repeating-linear-gradient(#fff 0 23px, #a8c8ec 23px 24px);
+  border-left: 3px solid #f19ba3; padding: 18px 20px 20px 40px; font: 15px/24px "Times New Roman", serif;
+  box-shadow: 4px 4px 0 #444;
+}
+.paper h2 { border: 0; font-size: 20px; margin: 6px 0; }
+.hw-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.hw-instr { font-style: italic; margin: 0; }
+.paper li { margin: 0; }
+.ans { display: block; font: 16px/24px "Comic Sans MS", "Comic Sans", cursive; color: #1d3fbf; padding-left: 10px; }
+.doodle { font: bold 14px "Comic Sans MS", cursive; color: #1d3fbf; transform: rotate(-4deg); }
+
+/* fax modal */
+.fax-log { font: 11px/1.5 "Courier New", monospace; background: #000; color: #0f0; padding: 6px; min-height: 120px; white-space: pre-wrap; }
+
+/* ---------- mobile: the 760px table, folded like a tax form ---------- */
+@media (max-width: 780px) {
+  body { padding-top: 26px; }
+  .page, .page > tbody, .page > tbody > tr, .page > tbody > tr > td { display: block; width: auto; }
+  .page colgroup { display: none; }
+  .cols { display: flex; flex-direction: column; }
+  .cols .center { order: 1; }
+  .cols .leftnav { order: 2; border-right: 0; border-top: 1px solid #999; }
+  .cols .right { order: 3; border-left: 0; border-top: 1px solid #999; }
+  .crest-cell { width: 76px; }
+  .crest { width: 70px; height: 70px; }
+  h1 { font-size: 21px; }
+  .util { margin-bottom: 6px; }
+  .welcome td, .welcome tr, .welcome tbody { display: block; width: auto; }
+  .conebox { padding: 0 0 8px; }
+  .ftable td, .ftable tr, .ftable tbody { display: block; width: auto !important; }
+  .ftable td:first-child { text-align: left; padding-bottom: 0; }
+  .right .box, .right .badge { max-width: 320px; margin-left: auto; margin-right: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .newgif { animation: none; } }
+.credit { font: 10px "Courier New", monospace; color: #444; border-top: 1px dotted #999; padding-top: 4px; }

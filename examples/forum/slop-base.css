@@ -1,0 +1,116 @@
+/* slop-base.css: styles for the gag components in slop.js only. NOT a page layout.
+   Re-skin per era by overriding these variables on :root. Defaults = Windows 98 dialog. */
+:root {
+  --slop-font: Tahoma, "MS Sans Serif", Geneva, sans-serif;
+  --slop-win-bg: #c0c0c0;
+  --slop-win-fg: #000;
+  --slop-title-bg: linear-gradient(90deg, #000080, #1084d0);
+  --slop-title-fg: #fff;
+  --slop-border: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+  --slop-radius: 0;
+  --slop-shadow: 6px 6px 0 #000;
+  --slop-btn-bg: #c0c0c0;
+  --slop-btn-fg: #000;
+  --slop-accent: #ff0080;
+  --slop-toast-bg: #000;
+  --slop-toast-fg: #0f0;
+  --slop-z: 9000;
+}
+
+.slop-btn {
+  font: inherit; color: var(--slop-btn-fg); background: var(--slop-btn-bg);
+  border: 0; border-radius: var(--slop-radius); box-shadow: var(--slop-border);
+  padding: .35rem .9rem; cursor: pointer; min-height: 32px;
+}
+.slop-btn:active { transform: translate(1px, 1px); }
+
+.slop-overlay { position: fixed; inset: 0; z-index: var(--slop-z); display: grid; place-items: center; background: #0006; padding: 1rem; }
+.slop-win {
+  font-family: var(--slop-font); color: var(--slop-win-fg); background: var(--slop-win-bg);
+  box-shadow: var(--slop-border), var(--slop-shadow); border-radius: var(--slop-radius);
+  width: min(380px, 100%); padding: 3px;
+}
+.slop-title {
+  display: flex; justify-content: space-between; align-items: center; gap: .5rem;
+  background: var(--slop-title-bg); color: var(--slop-title-fg); font-weight: 700; padding: 3px 4px 3px 8px;
+  border-radius: calc(var(--slop-radius) * .6);
+}
+.slop-x { font: inherit; background: var(--slop-btn-bg); color: var(--slop-btn-fg); border: 0; box-shadow: var(--slop-border); width: 24px; height: 22px; cursor: pointer; }
+.slop-body { padding: 1rem .8rem; line-height: 1.4; }
+.slop-btns { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; padding: 0 .8rem .8rem; }
+
+.slop-error { position: fixed; z-index: calc(var(--slop-z) - 1); width: min(300px, 92vw); }
+.slop-error-icon { font-size: 1.6rem; vertical-align: middle; }
+
+.slop-toast {
+  position: fixed; left: 50%; bottom: 1.2rem; z-index: calc(var(--slop-z) + 1);
+  transform: translate(-50%, 200%); transition: transform .3s cubic-bezier(.2, 1.6, .4, 1);
+  background: var(--slop-toast-bg); color: var(--slop-toast-fg); font-family: var(--slop-font);
+  padding: .7rem 1.1rem; border: 3px solid currentColor; border-radius: var(--slop-radius); max-width: 92vw; text-align: center;
+}
+.slop-toast.show { transform: translate(-50%, 0); }
+
+.slop-cookie {
+  position: fixed; left: 1rem; bottom: 1rem; z-index: calc(var(--slop-z) - 2); max-width: min(420px, calc(100vw - 2rem));
+  font-family: var(--slop-font); background: var(--slop-win-bg); color: var(--slop-win-fg);
+  box-shadow: var(--slop-border), var(--slop-shadow); border-radius: var(--slop-radius); padding: 1rem;
+}
+.slop-cookie div { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .7rem; align-items: center; }
+.slop-cookie .slop-reject { font-size: .65rem; opacity: .6; min-height: 0; padding: .1rem .3rem; transition: transform .2s; }
+
+.slop-proof {
+  position: fixed; left: 1rem; top: 40%; z-index: calc(var(--slop-z) - 3); max-width: 260px;
+  font-family: var(--slop-font); background: #fff; color: #000; border: 3px solid #000; box-shadow: 4px 4px 0 var(--slop-accent);
+  border-radius: var(--slop-radius); padding: .6rem .8rem; font-size: .85rem; transform: translateX(-130%); pointer-events: none;
+}
+.slop-proof.show { animation: slop-proof 5s ease forwards; }
+@keyframes slop-proof { 8%, 85% { transform: translateX(0); } 100% { transform: translateX(-130%); } }
+
+.slop-drop { position: fixed; top: -2rem; z-index: calc(var(--slop-z) - 4); font-size: 1.8rem; pointer-events: none; animation: slop-fall linear forwards; }
+@keyframes slop-fall { to { transform: translateY(110vh) rotate(720deg); } }
+
+.slop-clippy { position: fixed; right: 1rem; bottom: 5rem; z-index: calc(var(--slop-z) - 2); display: none; align-items: flex-end; gap: .4rem; font-family: var(--slop-font); }
+.slop-clippy.show { display: flex; }
+.slop-bubble { background: #ffffe1; color: #000; border: 1px solid #000; border-radius: 10px; padding: .7rem; max-width: 220px; font-size: .85rem; }
+.slop-bubble .slop-btn { margin-top: .4rem; }
+.slop-clippy-face { font-size: 3rem; animation: slop-bob 1.2s ease-in-out infinite alternate; }
+@keyframes slop-bob { to { transform: translateY(-6px) rotate(8deg); } }
+
+.slop-bar { height: 18px; background: #fff; box-shadow: var(--slop-border); margin: .5rem 0; padding: 2px; }
+.slop-bar i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(90deg, #000080 0 10px, transparent 10px 12px); transition: width .4s; }
+.slop-vlist { max-height: 120px; overflow: auto; padding-left: 1rem; color: #a00; font-family: "Courier New", monospace; font-size: .8rem; }
+
+.slop-captcha { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin: .5rem 0; }
+.slop-tile { font-size: 2rem; aspect-ratio: 1; border: 2px solid #000; background: #fff; cursor: pointer; }
+.slop-tile.picked { outline: 4px solid #1a73e8; outline-offset: -4px; opacity: .6; }
+
+.slop-wheel-wrap { position: relative; width: 220px; height: 220px; margin: 0 auto; }
+.slop-pointer { position: absolute; left: 50%; top: -14px; transform: translateX(-50%); z-index: 1; color: red; font-size: 1.4rem; }
+.slop-wheel { width: 100%; height: 100%; border-radius: 50%; border: 4px solid #000; position: relative; animation: slop-spin 3s linear infinite;
+  background: conic-gradient(#f33 0 12.5%, #ff0 0 25%, #0f0 0 37.5%, #0ff 0 50%, #f33 0 62.5%, #ff0 0 75%, #0f0 0 87.5%, #0ff 0); }
+.slop-wheel span { position: absolute; left: 50%; top: 50%; font-size: .55rem; font-weight: 700; transform-origin: 0 0; transform: rotate(calc(var(--i) * 45deg + 22deg)) translate(18px, -4px); white-space: nowrap; }
+@keyframes slop-spin { to { transform: rotate(360deg); } }
+
+.slop-chat { position: fixed; right: 1rem; bottom: 0; z-index: calc(var(--slop-z) - 2); width: min(280px, calc(100vw - 2rem)); font-family: var(--slop-font); }
+.slop-chat-head { width: 100%; font: inherit; font-weight: 700; text-align: left; background: var(--slop-title-bg); color: var(--slop-title-fg); border: 2px solid #000; border-bottom: 0; padding: .5rem .7rem; cursor: pointer; border-radius: var(--slop-radius) var(--slop-radius) 0 0; }
+.slop-chat-head b { background: red; color: #fff; border-radius: 99px; padding: 0 .4rem; font-size: .75rem; }
+.slop-chat-body, .slop-chat-form { display: none; }
+.slop-chat.open .slop-chat-body { display: flex; flex-direction: column; gap: .4rem; height: 220px; overflow: auto; background: #fff; color: #000; border: 2px solid #000; padding: .5rem; }
+.slop-chat.open .slop-chat-form { display: flex; border: 2px solid #000; border-top: 0; background: var(--slop-win-bg); }
+.slop-chat-form input { flex: 1; min-width: 0; font: inherit; border: 0; padding: .4rem; }
+.slop-msg { padding: .35rem .6rem; border-radius: 10px; max-width: 85%; font-size: .85rem; }
+.slop-msg.bot { background: #eee; align-self: flex-start; }
+.slop-msg.me { background: var(--slop-accent); color: #fff; align-self: flex-end; }
+
+.slop-loading { text-align: center; }
+.slop-caption { text-align: center; font-weight: 700; margin-top: .5rem; }
+
+.slop-roll { animation: slop-roll 1s ease-in-out; }
+@keyframes slop-roll { to { transform: rotate(360deg); } }
+.slop-quake { animation: slop-quake .1s linear 8; }
+@keyframes slop-quake { 25% { transform: translate(-6px, 3px); } 50% { transform: translate(5px, -4px); } 75% { transform: translate(-3px, -2px); } }
+.slop-flip { transform: rotate(180deg); transition: transform 1s; font-family: Papyrus, fantasy !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .slop-roll, .slop-quake, .slop-wheel, .slop-clippy-face { animation: none !important; }
+}

@@ -1,0 +1,310 @@
+<!doctype html>
+<!--
+  SLOP BIBLE: $TATER / Tater Tim's Spud Shack
+  - Product claim → knockoff: "a local potato stand, now on the blockchain" → a roadside fry shack behind a
+    Sunoco whose founder launched a memecoin, pumped it, and left for "a conference in Dubai".
+  - Narrator: the intern. Only remaining employee. Runs the fryer, the website and the Discord. Unpaid (paid in $TATER).
+  - Steve: does EVERYTHING by hand in MS Paint: the logo, the price chart, the audit, the NFTs, the transactions.
+  - Mascot: 🥔 laser-eyed potato (drawn by Steve).
+  - Running gags:
+    1. Translation errors: the whole site went EN → KO → PT → FI → JA → EN "to seem global". The 🌐 button makes it worse.
+       (hero, whitepaper, menu, roadmap, wallet modal, cookie, footer)
+    2. FAQ where every answer is "No." (FAQ, wallet modal, chatbot, menu, hours, Discord invite, Steve)
+    3. Progress bars that go backwards (liquidity lock, Steve's chart, roadmap, swap loading, Discord boosts)
+  - Custom era gags: Steve's MS Paint chart window (only up, then one huge red candle), translate button,
+    already-launched countdown, rug-pull konami/footer link that drops the page off screen.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$TATER 🥔🚀 Tater Tim's Spud Shack | The Potato Of Moon</title>
+  <meta name="description" content="Parody. A potato stand launched a token. The intern is the only one left.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./slop-base.css">
+  <link rel="stylesheet" href="./crypto.css">
+</head>
+<body>
+<div class="intern-banner" role="note">
+  <a class="back" href="../">← more slop</a>
+  <span>📢 hi. i am the intern. everyone else left. Tim (founder) is "at a conference in Dubai" since march. i run the fryer, the website AND the discord. pls buy 1 small fry so i can keep my bus pass 🙏🥔</span>
+</div>
+
+<div class="tape" aria-hidden="true"><div class="tape-in">
+  <span>$TATER <b class="up">+4,200%</b></span><span>$FRY <b class="up">+12%</b></span><span>$MASH <b class="dn">-99.8%</b></span><span>$YAM <b class="dn">(delisted)</b></span><span>$TOT <b class="up">+0.0001%</b></span><span>$HASHBROWN <b class="up">+69% (hash rate)</b></span><span>$GRAVY <b class="dn">(rugged)</b></span><span>$SPUD <b class="dn">(we don't talk about $SPUD)</b></span>
+  <span>$TATER <b class="up">+4,200%</b></span><span>$FRY <b class="up">+12%</b></span><span>$MASH <b class="dn">-99.8%</b></span><span>$YAM <b class="dn">(delisted)</b></span><span>$TOT <b class="up">+0.0001%</b></span><span>$HASHBROWN <b class="up">+69% (hash rate)</b></span><span>$GRAVY <b class="dn">(rugged)</b></span><span>$SPUD <b class="dn">(we don't talk about $SPUD)</b></span>
+</div></div>
+
+<header class="top">
+  <a class="logo" href="#top"><span class="logo-tater">🥔</span><span><b>$TATER</b><small>Tater Tim's Spud Shack</small></span></a>
+  <nav class="nav">
+    <a href="#menu">Menu</a><a href="#tokenomics">Tokenomics</a><a href="#roadmap">Roadmap</a><a href="#visit">Visit</a><a href="#faq">FAQ</a>
+  </nav>
+  <button class="pill ghost" id="lang" title="translate (makes it worse)">🌐 EN<small>(ish)</small></button>
+  <button class="pill neon" id="wallet">Connect Wallet</button>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="gm">gm ser. probably nothing. 👀</p>
+      <h1 class="ticker">$TATER</h1>
+      <p class="hero-sub" data-tr="heroSub">The potato that goes moon. Hold with hand of diamond. The fry is coming for the you. 🚀</p>
+
+      <div class="price-row">
+        <div class="price-big"><span data-creep="0.00004200" id="price">$0.00004200</span></div>
+        <div class="chg">▲ +<span id="chg" data-creep="4200">4,200</span>% <small>(24h)</small></div>
+      </div>
+
+      <div class="stats">
+        <div class="glass"><small>Market cap</small><b>$<span id="mcap" data-creep="4.2">4.2</span>T <i>(est.) (by me)</i></b></div>
+        <div class="glass"><small>Holders</small><b>12 <i>(11 are dev)</i></b></div>
+        <div class="glass"><small>LAUNCH IN</small><b class="mono" id="countdown">-214d 00:00:00</b><i>(already launched. u missed it)</i></div>
+      </div>
+
+      <div class="glass backbar-card">
+        <div class="bb-head"><span>🔒 Liquidity locked</span><b class="bb-pct" id="lockPct">87%</b></div>
+        <div class="bb" id="lockBar"><i style="width:87%"></i></div>
+        <small class="bb-note" id="lockNote">locked by Tim. key is in Dubai. bar is moving the normal direction (backwards).</small>
+      </div>
+
+      <div class="cta-row">
+        <a class="pill neon big" href="#swap" data-tr="ctaBuy">Buy on DEXSlop 🚀🚀</a>
+        <a class="pill ghost big" href="#chart">View chart (drawn by Steve)</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="potato-card glass">
+        <svg class="potato" viewBox="0 0 320 300" role="img" aria-label="Laser-eyed potato mascot, drawn in MS Paint by Steve">
+          <defs>
+            <linearGradient id="beam" x1="0" x2="1"><stop offset="0" stop-color="#ff2a2a"/><stop offset="1" stop-color="#ff2a2a" stop-opacity="0"/></linearGradient>
+          </defs>
+          <g class="beams">
+            <polygon points="128,118 320,40 320,92" fill="url(#beam)"/>
+            <polygon points="188,116 320,96 320,150" fill="url(#beam)"/>
+          </g>
+          <path d="M60 150 L72 92 L104 60 L150 48 L200 54 L238 80 L258 128 L254 182 L232 226 L190 252 L130 256 L86 236 L62 198 Z" fill="#c4935a" stroke="#000" stroke-width="5" stroke-linejoin="miter"/>
+          <g fill="#8a6234"><rect x="96" y="96" width="10" height="8"/><rect x="210" y="170" width="12" height="9"/><rect x="120" y="206" width="9" height="9"/><rect x="226" y="110" width="8" height="8"/></g>
+          <rect x="108" y="104" width="40" height="30" fill="#fff" stroke="#000" stroke-width="4"/>
+          <rect x="170" y="102" width="40" height="30" fill="#fff" stroke="#000" stroke-width="4"/>
+          <rect x="122" y="110" width="14" height="16" fill="#ff1a1a"/>
+          <rect x="184" y="108" width="14" height="16" fill="#ff1a1a"/>
+          <path d="M120 178 L140 192 L176 194 L204 176" fill="none" stroke="#000" stroke-width="5"/>
+          <text x="66" y="290" font-family="Comic Sans MS, cursive" font-size="17" fill="#fff">"its a potato with lasers" -steve</text>
+        </svg>
+        <div class="art-tag">🎨 drawn by Steve in MS Paint · 1 of 1 · saved as .bmp</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEVE'S MS PAINT CHART -->
+  <section class="sec" id="chart">
+    <h2 class="h2">📈 Live Chart <small>(not live) (Steve draws each candle by hand)</small></h2>
+    <div class="paint">
+      <div class="paint-title"><span>🖌️ chart_FINAL_final2_USE THIS ONE.bmp - Paint</span><span class="paint-ctrls"><i>_</i><i>□</i><i>✕</i></span></div>
+      <div class="paint-menu"><span>File</span><span>Edit</span><span>View</span><span>Image</span><span>Colors</span><span>Help</span></div>
+      <div class="paint-main">
+        <div class="paint-tools" aria-hidden="true"><i>✏️</i><i>🪣</i><i>🔤</i><i>⬜</i><i>🖌️</i><i>🧽</i><i>💨</i><i>🔍</i></div>
+        <div class="paint-canvas" id="canvas">
+          <div class="candles" id="candles"></div>
+          <span class="scrawl s1">UP ↑↑</span>
+          <span class="scrawl s2" id="tim-sold" hidden>← Tim sold</span>
+          <span class="scrawl s3">this is us →</span>
+        </div>
+      </div>
+      <div class="paint-palette" aria-hidden="true">
+        <i style="background:#000"></i><i style="background:#808080"></i><i style="background:#800000"></i><i style="background:#808000"></i><i style="background:#008000"></i><i style="background:#008080"></i><i style="background:#000080"></i><i style="background:#800080"></i><i style="background:#fff"></i><i style="background:#c0c0c0"></i><i style="background:#f00"></i><i style="background:#ff0"></i><i style="background:#0f0"></i><i style="background:#0ff"></i><i style="background:#00f"></i><i style="background:#f0f"></i>
+      </div>
+      <div class="paint-status"><span id="paintStatus">Steve is drawing the chart… 71%</span><button class="pbtn" id="redraw">ask Steve to redraw</button></div>
+    </div>
+  </section>
+
+  <!-- SWAP DEMO -->
+  <section class="sec" id="swap">
+    <h2 class="h2">🔁 DEXSlop <small>swap + order fries in ONE transaction (patent pending) (rejected)</small></h2>
+    <form class="swap glass" id="swapForm">
+      <label class="swap-box">
+        <small>You pay</small>
+        <div class="swap-line"><input type="number" name="amt" value="1" min="0" step="any" aria-label="amount"><select name="cur" aria-label="currency"><option>ETH</option><option>USD</option><option>1 real potato</option><option>ur dignity</option><option>a Wendy's gift card</option></select></div>
+      </label>
+      <div class="swap-arrow">⇅</div>
+      <div class="swap-box">
+        <small>You receive (estimated) (by Steve)</small>
+        <div class="swap-line"><b class="mono" id="recv">4,200,000,000</b><span class="tag">🥔 $TATER</span></div>
+      </div>
+      <ul class="swap-meta">
+        <li><span>Slippage</span><b>99% (auto)</b></li>
+        <li><span>Gas fee</span><b>3 potatoes</b></li>
+        <li><span>Fry included</span><b>1 (one) (cold)</b></li>
+        <li><span>Swaps left</span><b id="credits">3</b></li>
+      </ul>
+      <button class="pill neon big wide">SWAP + ORDER FRIES 🍟🚀</button>
+      <div class="swap-out" id="swapOut" hidden></div>
+    </form>
+  </section>
+
+  <!-- MENU -->
+  <section class="sec" id="menu">
+    <h2 class="h2">🍟 The Menu <small>(prices in $TATER, rising while u read)</small></h2>
+    <p class="note" data-tr="menuNote">Fried Potato Sticks of French Origin (they are not French) (they are not of origin). All potatoes are certificate. Substitutions? No.</p>
+    <div class="menu-grid">
+      <article class="glass item"><div class="emo">🍟</div><h3>Small Fry</h3><p>A small fry. Like you, before $TATER. Now like you, after $TATER.</p><b class="mono"><span data-mcreep="400">400</span> $TATER <i>+ gas</i></b></article>
+      <article class="glass item"><div class="emo">🌕</div><h3>Loaded Moon Potato</h3><p>Baked, loaded, and leveraged 100x. Toppings liquidated at random.</p><b class="mono"><span data-mcreep="4200">4,200</span> $TATER</b></article>
+      <article class="glass item"><div class="emo">#️⃣</div><h3>Hash(rate) Brown</h3><p>Mined, not fried. Takes 11 minutes and uses the whole shack's electricity.</p><b class="mono"><span data-mcreep="690">690</span> $TATER</b></article>
+      <article class="glass item hot"><div class="emo">🖼️</div><h3>Baked Potato NFT</h3><p>Steve draws u a potato in MS Paint. U do not get the potato. U get a right-click.</p><b class="mono"><span data-mcreep="12000">12,000</span> $TATER</b></article>
+      <article class="glass item"><div class="emo">🧈</div><h3>Tots of Tots (staking bundle)</h3><p>Stake 40 tots. Unlock in 12 months. Tots are cold by then. APY: 4,000% (of cold).</p><b class="mono"><span data-mcreep="1337">1,337</span> $TATER</b></article>
+      <article class="glass item gone"><div class="emo">🥣</div><h3>Mashed Potatoes</h3><p>Currently liquidated. Was mashed by the market.</p><b class="mono">SOLD OUT (rugged)</b></article>
+    </div>
+  </section>
+
+  <!-- TOKENOMICS -->
+  <section class="sec" id="tokenomics">
+    <h2 class="h2">🍩 Tokenomics <small>(fair launch) (to Tim)</small></h2>
+    <div class="toko">
+      <div class="donut" role="img" aria-label="Donut chart: 91 percent dev wallet"><div class="donut-hole"><b>1T</b><small>total supply<br>(each one hand-drawn by Steve)</small></div></div>
+      <ul class="legend">
+        <li><i style="background:#dc1fff"></i><b>91%</b> Dev wallet (safe) (Tim) (Dubai)</li>
+        <li><i style="background:#03e1ff"></i><b>5%</b> Steve's MS Paint license (it was free)</li>
+        <li><i style="background:#ffb800"></i><b>3%</b> Fryer oil reserve (on fire)</li>
+        <li><i style="background:#00ffa3"></i><b>1%</b> Community (u) (all 12 of u)</li>
+        <li class="tax">Tax: 4% buy · 99% sell · 12% fanum tax on fries</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="sec" id="roadmap">
+    <h2 class="h2">🗺️ Roadmap <small>to the moon (the moon is a potato) (source: whitepaper)</small></h2>
+    <div class="glass backbar-card">
+      <div class="bb-head"><span>Roadmap progress</span><b class="bb-pct" id="roadPct">64%</b></div>
+      <div class="bb" id="roadBar"><i style="width:64%"></i></div>
+    </div>
+    <ol class="road">
+      <li class="done"><b>Phase 1 ✅</b><span>Open potato stand behind the Sunoco (2019). Sell fries. Be happy.</span></li>
+      <li class="done"><b>Phase 2 ✅</b><span>Make website.</span></li>
+      <li class="done"><b>Phase 3 ✅</b><span>Make website again (Steve, MS Paint, exported as .bmp, 41MB).</span></li>
+      <li class="now"><b>Phase 4 🚀</b><span data-tr="roadP4">Potato to moon. The moon is the potato's ancestral house. (in progress) (backwards)</span></li>
+      <li><b>Phase 5: ???</b><span>Tim knows. Tim is in Dubai. Tim reads messages at 3am and replies "🚀".</span></li>
+      <li><b>Phase 6: fries?</b><span>Return to selling fries for money like a normal shack. (needs community vote) (vote: no)</span></li>
+    </ol>
+  </section>
+
+  <!-- WHITEPAPER -->
+  <section class="sec" id="whitepaper">
+    <h2 class="h2">📄 Whitepaper <small>v0.3 · 1 page (front only)</small></h2>
+    <div class="glass paper">
+      <p data-tr="paper">$TATER is the decentralized potato. In beginning, Tim had fries. Then Tim had the idea. The idea was: what if fries, but blockchain. Each $TATER represents 0.0001 of the emotional value of one potato, held in the custody of the walk-in fridge (broken). The supply is one trillion and Steve has drew each one with the hand. The remainder is moon.</p>
+      <p class="tiny">Translated EN → 한국어 → Português → Suomi → 日本語 → EN by the intern's phone "to seem global". Original English lost in fryer incident. Sorry.</p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="sec" id="team">
+    <h2 class="h2">👥 The Team <small>(doxxed: no)</small></h2>
+    <div class="team">
+      <div class="glass mem gone"><div class="ava a1">🥔<span>🕶️</span></div><b>Tim</b><small>Founder · CEO</small><p>"at a conference in Dubai." last seen: march. last message: "🚀"</p></div>
+      <div class="glass mem"><div class="ava a2">🥔<span>🖌️</span></div><b>Steve</b><small>CTO · CFO · Art Director · Blockchain</small><p>Does all of it by hand in MS Paint. Can Steve use Photoshop? No.</p></div>
+      <div class="glass mem"><div class="ava a3">🥔<span>🧢</span></div><b>The Intern (me)</b><small>Only remaining employee</small><p>Fryer, website, discord, legal. Paid in $TATER. Cannot sell $TATER.</p></div>
+      <div class="glass mem"><div class="ava a4">🐕</div><b>Biscuit</b><small>Head of Security</small><p>Good boy. Also the auditor (see below). Conflict of interest: yes (treats).</p></div>
+      <div class="glass mem gone"><div class="ava a5">🥔<span>💼</span></div><b>Kevin</b><small>Former Head of Liquidity</small><p>Left. Took the register. The register was the liquidity.</p></div>
+      <div class="glass mem"><div class="ava a6">🔥</div><b>The Fryer</b><small>Hardware Wallet</small><p>Holds 3% of supply. Has been on fire since the halving.</p></div>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section class="sec" id="audit">
+    <h2 class="h2">🛡️ Audited By</h2>
+    <div class="audit">
+      <div class="glass aud"><div class="seal">🐕</div><div><b>CertiDog</b> — lead auditor Biscuit sniffed all 4 lines of the contract.<br><span class="mono">Findings: 0 critical · 0 major · 1 hash brown (eaten)</span><br>Verdict: <i>"woof"</i> (pass?)</div></div>
+      <div class="glass aud"><div class="seal">🖌️</div><div><b>Steve Security Labs</b> — hand-audited in MS Paint. Circled the bad parts in red. Circled everything in red.<br><span class="mono">Status: AUDITED ✅ (drawn on)</span></div></div>
+    </div>
+  </section>
+
+  <!-- VISIT (local business) -->
+  <section class="sec" id="visit">
+    <h2 class="h2">📍 Visit The Shack <small>(physical location) (has door)</small></h2>
+    <div class="visit">
+      <div class="glass hours">
+        <h3>Hours <span class="open-sign" data-tr="open">OPEN (probably)</span></h3>
+        <table>
+          <tr><td>Mon–Fri</td><td>11am – whenever the intern's bus comes</td></tr>
+          <tr><td>Saturday</td><td>Steve (by hand)</td></tr>
+          <tr><td>Sunday</td><td>Open on Sunday? No.</td></tr>
+          <tr><td>Bear market</td><td>24/7 (we have nowhere else to go)</td></tr>
+        </table>
+        <p class="addr">🥔 Behind the Sunoco, Route 9.<br>Look for the potato with laser eyes (painted on the dumpster by Steve).</p>
+      </div>
+      <div class="map" aria-label="Hand-drawn map">
+        <span class="road-h"></span><span class="road-v"></span>
+        <span class="pin p1">⛽<small>Sunoco</small></span>
+        <span class="pin p2">🥔<small>THE SHACK</small></span>
+        <span class="pin p3">🚌<small>intern's bus</small></span>
+        <span class="pin p4">✈️<small>Tim (Dubai)<br>(not to scale)</small></span>
+        <span class="pin p5">🐕<small>Biscuit</small></span>
+        <span class="map-cap">map drawn by Steve. north is "up-ish".</span>
+      </div>
+    </div>
+    <div class="reviews">
+      <blockquote class="glass rev"><span class="stars">★★☆☆☆</span>came for fries. left with 11,000 $TATER and no fries. the intern said "wagmi" while crying.<cite>— Derek, Route 9</cite></blockquote>
+      <blockquote class="glass rev"><span class="stars">★★★★★</span>steve drew me a potato in ms paint and said it was an NFT. it was $400. i love it. i am not ok.<cite>— verified holder (1 of 12)</cite></blockquote>
+      <blockquote class="glass rev"><span class="stars">★☆☆☆☆</span>Asked "can I pay in cash". He said no. Asked "can I get ketchup". He said no. Asked "is there a manager". No.<cite>— Karen (not dev)</cite></blockquote>
+      <blockquote class="glass rev"><span class="stars">★★★★☆</span>The potato is of very excellence. The fries walk well. I recommend to the family of me.<cite>— review translated 5 times</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- DISCORD -->
+  <section class="sec" id="discord">
+    <h2 class="h2">💬 Community <small>(strong) (bots)</small></h2>
+    <div class="disc">
+      <div class="glass dstat"><small>Members</small><b class="mono">41,207</b><i>(41,195 bots)</i></div>
+      <div class="glass dstat"><small>Online now</small><b class="mono">3</b><i>(me, Steve, Biscuit)</i></div>
+      <div class="glass dstat"><small>Messages today</small><b class="mono">9,412</b><i>(9,400 are "wen fries")</i></div>
+      <div class="glass dstat"><small>Moderators</small><b class="mono">1</b><i>(me) (intern)</i></div>
+    </div>
+    <div class="glass backbar-card">
+      <div class="bb-head"><span>🚀 Server boost progress</span><b class="bb-pct" id="boostPct">3 boosts</b></div>
+      <div class="bb" id="boostBar"><i style="width:75%"></i></div>
+    </div>
+    <div class="cta-row"><button class="pill neon big" id="joinDiscord">Join the Discord 💎🙌</button></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <h2 class="h2">❓ FAQ <small>Frequently Asked Questions (Frequently Answered: No)</small></h2>
+    <div class="faq">
+      <details><summary>Is this a rug pull?</summary><p>No.</p></details>
+      <details><summary>Can I withdraw my $TATER?</summary><p>No.</p></details>
+      <details><summary>Can I trade $TATER for fries at the shack?</summary><p>No.</p></details>
+      <details><summary>Is Tim coming back from Dubai?</summary><p>No.</p></details>
+      <details><summary>Does the intern get paid?</summary><p>No.</p></details>
+      <details><summary>Was the audit done by a licensed professional?</summary><p>No.</p></details>
+      <details><summary>Is there an English version of the whitepaper?</summary><p>No.</p></details>
+      <details><summary>Is the fryer still on fire?</summary><p>No.</p></details>
+      <details><summary>Is this financial advice?</summary><p>No.</p></details>
+      <details><summary>Are you just going to say "no" to everything?</summary><p>No.</p></details>
+      <details><summary>Is there ANY question where the answer is yes?</summary><p>No.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="nfa" data-tr="nfa">NOT FINANCIAL ADVICE</div>
+  <p>Tater Tim's Spud Shack LLC (pending) (not LLC). $TATER is not a security, a currency, or a potato. Prices are shown in $TATER, USD and vibes. The intern is not liable. Steve is not liable but drew this disclaimer by hand.</p>
+  <p class="tiny">Parody website. Not a real token, not a real shack. No wallets are connected, no money moves, nothing is for sale. Never type your seed phrase anywhere, ever.</p>
+  <p class="foot-links"><a href="../">← more slop</a> · <button class="linkbtn" id="rugBtn">pull rug (dev only)</button> · <span class="mono">↑↑↓↓←→←→BA</span></p>
+  <p class="credit">🖌️ slopped by <a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">@icantcodefyi</a> <span>(not Steve) (Steve would have done it by hand)</span></p>
+</footer>
+
+<div class="rugged-msg" id="rugMsg" hidden>
+  <div class="glass"><div class="rug-emoji">🧶🏃‍♂️✈️</div><h2>RUG PULLED</h2><p>Tim has left the chat. The website has been moved to Dubai.</p><button class="pill neon" id="unrug">un-rug (Steve puts it back by hand)</button></div>
+</div>
+
+<script src="./slop.js"></script>
+<script src="./crypto.js"></script>
+</body>
+</html>

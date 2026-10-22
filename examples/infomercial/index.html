@@ -1,0 +1,380 @@
+<!doctype html>
+<!--
+  SLOP BIBLE: LOBSTAKE™
+  era: infomercial-funnel (2 a.m. TV ad + dropship long-form sales letter)
+  format: restaurant-menu. A seafood restaurant with ONE dish (lobster), sold like a miracle product.
+  claim → knockoff: "fine dining experience" → one lobster, one table, one man (Steve), infinite butter.
+  narrator: Brayden "Claw" Hoffmann, ex-crypto bro (down 98% on SquidCoin) who now treats lobster like
+            a token: "the only asset that turns red and that's GOOD." Still says gm. Still has a Discord.
+  steve: the chef, waiter, accountant and logo. Draws every lobster, menu photo and reservation by hand
+         in MS Paint before cooking it "for quality". Also operates the phones. Also the table, eventually.
+  mascot: 🦞 (Gerald, the tank lobster, not for sale, the only one who listens)
+  running gags (each pays off 3+ times):
+    1. progress bars go BACKWARDS: sticky "table prep" bar, booking loader, 2nd-location fundraiser, FAQ.
+    2. every testimonial is Gary T.: reviews, social-proof ticker, "how did u hear" dropdown, press row, FAQ.
+    3. the Terms of Service is a cry for help: cookie banner, order form scroll box, footer modal, chatbot.
+  custom era gags: resetting countdown, tank stock that goes up, $LOB market ticker, Steve's MS Paint
+                   kitchen ticket canvas (draw your order, Steve can't read), upsell chain on checkout.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOBSTAKE™ | The ONE Dish Big Restaurant Doesn't Want You To Eat!!!</title>
+<meta name="description" content="A seafood restaurant with one (1) dish, sold to you by a former crypto bro. Operators are standing by (Steve).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦞%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./lobster.css">
+<script src="./slop.js" defer></script>
+<script src="./lobster.js" defer></script>
+</head>
+<body>
+
+<!-- ===== red warning bar + backwards progress ===== -->
+<div class="topstack">
+  <div class="warnbar">
+    <a class="backlink" href="../">← more slop</a>
+    <span>⚠ WARNING: LOBSTER SEASON ENDS IN <b id="countdown">01:00</b> <small>(resets)</small></span>
+  </div>
+  <div class="prepbar" aria-live="off">
+    <div class="prepbar-fill" id="prepFill"></div>
+    <span class="prepbar-label" id="prepLabel">🦞 Preparing ur table… 87%</span>
+  </div>
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>$LOB <i class="up">▲ 4.20%</i></span><span>BUTTER <i class="up">▲ 12.0%</i></span><span>$SQUID <i class="dn">▼ 99.98% (rip)</i></span>
+    <span>STEVE MORALE <i class="dn">▼ 61%</i></span><span>GARY T. REVIEWS <i class="up">▲ 1,204</i></span><span>BIBS <i class="up">▲ stable</i></span>
+    <span>CRAB <i class="dn">▼ (we don't talk about crab)</i></span><span>GERALD <i class="up">▲ still alive</i></span><span>MY DAD'S TRUST IN ME <i class="dn">▼ N/A</i></span>
+    <span>$LOB <i class="up">▲ 4.20%</i></span><span>BUTTER <i class="up">▲ 12.0%</i></span><span>$SQUID <i class="dn">▼ 99.98% (rip)</i></span>
+    <span>STEVE MORALE <i class="dn">▼ 61%</i></span><span>GARY T. REVIEWS <i class="up">▲ 1,204</i></span><span>BIBS <i class="up">▲ stable</i></span>
+    <span>CRAB <i class="dn">▼ (we don't talk about crab)</i></span><span>GERALD <i class="up">▲ still alive</i></span><span>MY DAD'S TRUST IN ME <i class="dn">▼ N/A</i></span>
+  </div>
+</div>
+
+<main class="letter">
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="seal" aria-label="As seen on TV">AS SEEN<br>ON<br><b>TV</b><small>(public access, 3am)</small></div>
+    <p class="kicker">ATTENTION: Hungry Adults Who Are Tired Of Having Options</p>
+    <h1><mark>FORMER CRYPTO MILLIONAIRE*</mark> REVEALS THE <u>ONE (1) DISH</u> BIG RESTAURANT DOESN'T WANT YOU TO EAT!!!</h1>
+    <p class="fine">*for 11 minutes in November 2021</p>
+    <p class="sub">Introducing <b>LOBSTAKE™</b>, the world's first <mark>single-asset restaurant</mark>. One menu item. Zero diversification. Infinite butter. 🦞🧈</p>
+  </header>
+
+  <!-- product hero: Steve's MS Paint "photo" -->
+  <section class="product">
+    <div class="paint-win">
+      <div class="paint-title"><span>🖌 lobster_FINAL_final2.bmp - Paint</span><span class="paint-ctl">_ □ ✕</span></div>
+      <div class="paint-menu">File &nbsp; Edit &nbsp; View &nbsp; Image &nbsp; Colors &nbsp; Help(Steve)</div>
+      <div class="paint-body">
+        <div class="paint-tools" aria-hidden="true">✏️<br>🪣<br>🔤<br>⬛<br>〰️<br>🔍</div>
+        <svg class="paint-canvas" viewBox="0 0 400 260" role="img" aria-label="An MS Paint drawing of a lobster by Steve" shape-rendering="crispEdges">
+          <rect width="400" height="260" fill="#fff"/>
+          <path d="M0 0H400V170Q330 160 300 175L260 150 230 172 120 168 60 180 0 175Z" fill="#99d9ea"/>
+          <path d="M120 0L150 40 130 60 170 70 160 100 0 90Z" fill="#fff"/>
+          <circle cx="40" cy="38" r="22" fill="#fff200" stroke="#000" stroke-width="3"/>
+          <path d="M40 4V-6M74 38H86M64 14L72 6M10 64L2 72M64 62L72 70" stroke="#000" stroke-width="3"/>
+          <ellipse cx="205" cy="205" rx="170" ry="38" fill="#fff" stroke="#000" stroke-width="3"/>
+          <g stroke="#000" stroke-width="3" fill="#ed1c24">
+            <path d="M160 130L120 170M175 140L150 186M195 145L188 192M215 145L222 190M232 140L258 182" fill="none"/>
+            <path d="M150 115L110 90M150 150L105 175" fill="none" stroke-width="6"/>
+            <path d="M265 112L295 108 300 140 268 152Z"/>
+            <path d="M296 110L322 110 326 138 300 140Z"/>
+            <path d="M322 112L346 116 348 134 326 138Z"/>
+            <path d="M346 116L385 92 378 126 392 150 348 134Z"/>
+            <ellipse cx="208" cy="130" rx="62" ry="30"/>
+            <path d="M112 92C78 58 50 70 56 92 60 106 78 104 82 96 72 92 70 82 84 82 92 82 100 94 112 92Z"/>
+            <path d="M106 176C70 186 58 214 78 222 92 226 100 214 96 204 88 210 80 204 86 196 92 190 104 190 106 176Z"/>
+            <path d="M150 112C120 70 100 30 60 20M150 118C110 90 70 60 18 64" fill="none" stroke-width="2"/>
+          </g>
+          <circle cx="160" cy="118" r="6" fill="#fff" stroke="#000" stroke-width="2"/><circle cx="161" cy="118" r="3" fill="#000"/>
+          <circle cx="176" cy="114" r="6" fill="#fff" stroke="#000" stroke-width="2"/><circle cx="177" cy="114" r="3" fill="#000"/>
+          <path d="M162 138Q170 146 180 136" stroke="#000" stroke-width="2" fill="none"/>
+          <text x="208" y="40" font-family="Arial" font-size="30" font-weight="700" fill="#ed1c24" stroke="#000" stroke-width="1">LOBSTR</text>
+          <text x="214" y="62" font-family="Arial" font-size="13" fill="#000">(actual size) (not actual size)</text>
+          <text x="300" y="246" font-family="Comic Sans MS, Arial" font-size="14" fill="#3f48cc">by steve</text>
+          <path d="M340 60L362 30 372 40 350 70Z" fill="#ffc90e" stroke="#000" stroke-width="2"/>
+          <text x="328" y="86" font-family="Arial" font-size="11" fill="#000">butter</text>
+        </svg>
+      </div>
+      <div class="paint-status">For Help, click Help Topics on the Help Menu. Steve is the Help Menu. &nbsp;|&nbsp; 400x260</div>
+    </div>
+    <p class="caption">⬆ Actual product photo. Hand-drawn by Chef Steve in MS Paint before every single boil. <i>For quality.</i></p>
+
+    <div class="urgency">
+      <p>🔴 <b id="viewers">37</b> people are viewing this right now <small>(36 are Gary T.)</small></p>
+      <p>⚠ Only <b class="stock" id="stock">3</b> lobsters left in tank! <small id="stockNote">(Gerald keeps counting himself)</small></p>
+      <p>📈 Today's MARKET PRICE: <b class="price" data-creep="68.00">$68.00</b> <small>(goes up while u look at it. like a real market. unlike $SQUID.)</small></p>
+    </div>
+    <a class="buy" href="#order">YES!!! I WANT THE LOBSTER →<small>button 1 of 11</small></a>
+  </section>
+
+  <!-- before / after -->
+  <section class="beforeafter">
+    <h2>REAL RESULTS FROM A REAL CUSTOMER (me)</h2>
+    <div class="ba-grid">
+      <figure class="ba before"><div class="ba-img" aria-hidden="true">😭<span>🦞</span></div><figcaption><b>BEFORE</b> LOBSTAKE™</figcaption></figure>
+      <figure class="ba after"><div class="ba-img" aria-hidden="true">😭<span>🦞</span></div><figcaption><b>AFTER</b> LOBSTAKE™</figcaption></figure>
+    </div>
+    <p class="fine">Same photo. Notice the difference? That's what lobster does. It adds COLOR. *Still crying. Results not typical. Saturation not FDA approved.</p>
+  </section>
+
+  <!-- the letter -->
+  <section class="dear">
+    <p class="from">From the desk of Brayden "Claw" Hoffmann<br><small>Founder, CEO, Head of Lobster Relations, ex-Web3 Visionary (legally I can't say why "ex")</small></p>
+    <p>Dear Future Lobster Holder,</p>
+    <p>Two years ago I had 400 ETH, a Lamborghini <i>(rented)</i>, and a podcast with 3 listeners <i>(one was my mom, one was Steve, one was a bot that only said "gm")</i>.</p>
+    <p>Then SquidCoin went to zero. Then it went <b>below</b> zero. I didn't know that was possible. My accountant didn't either. He's a lobster fisherman now. That's how I found out.</p>
+    <p>I stood on that dock in Maine and I looked at a lobster and I realized something that changed my life forever:</p>
+    <blockquote><mark>Lobster is the only asset that turns RED… and that's GOOD.</mark></blockquote>
+    <p>Lobster used to be <b>prison food</b>. Now it's $68 market price. That is a <b>10,000x</b>. I have never seen a chart like that. Not on Bitcoin. Not on Dogecoin. Not on the coin I made about my dog. Lobsters are also <u>biologically immortal</u>. That's the ultimate HODL. 💎🦞</p>
+    <p>So I sold everything I had left <i>(a chair)</i>, hired my old roommate Steve, and opened the world's first restaurant that does ONE thing and does it… one time per lobster.</p>
+    <p>Not financial advice. <b>Lobster advice.</b></p>
+    <p class="sig">Brayden 🦞<small>WAGMI (We're All Gonna Melt Ingredients)</small></p>
+  </section>
+
+  <a class="buy" href="#order">SECURE MY CLAW POSITION NOW →<small>button 2 of 11</small></a>
+
+  <!-- tired of -->
+  <section class="tired">
+    <h2>ARE YOU TIRED OF…?</h2>
+    <ul>
+      <li>😩 Restaurants with <b>MORE THAN ONE DISH</b>? (decision fatigue is real. I read it in a thread.)</li>
+      <li>😩 Chewing chicken like some kind of <b>PEASANT</b>?</li>
+      <li>😩 Watching ur portfolio go red when u could be watching a <b>LOBSTER</b> go red?</li>
+      <li>😩 Waiters who ask "how is everything?" (we only have one thing. it's lobster. it's fine.)</li>
+      <li>😩 Menus that are longer than one (1) item?</li>
+    </ul>
+    <p class="tired-cta">THERE HAS TO BE A BETTER WAY!!!</p>
+  </section>
+
+  <!-- THE MENU -->
+  <section class="menu" id="menu">
+    <h2 class="menu-h">~ THE MENU ~</h2>
+    <p class="menu-sub">LOBSTAKE™ Fine Dining &amp; Claw Exchange &bull; Est. last Tuesday &bull; Chef: Steve</p>
+    <div class="menu-cols">
+      <div>
+        <h3>Starters</h3>
+        <dl>
+          <dt>Lobster <span class="dots"></span> <em>MP</em></dt><dd>A lobster. To start.</dd>
+          <dt>Lobster Bisque <span class="dots"></span> <em>MP</em></dt><dd>A whole lobster in a bowl. Not blended. We don't have a blender. Steve tried.</dd>
+          <dt>Garden Salad <span class="dots"></span> <em>MP</em></dt><dd>It's a lobster. We put it near a plant.</dd>
+        </dl>
+        <h3>Mains</h3>
+        <dl>
+          <dt>Lobster (Large) <span class="dots"></span> <em>MP+</em></dt><dd>Same lobster, closer to ur face.</dd>
+          <dt>Lobster (Small) <span class="dots"></span> <em>MP−</em></dt><dd>Same lobster, across the room.</dd>
+          <dt>Surf &amp; Turf <span class="dots"></span> <em>MP</em></dt><dd>Lobster, served on a rug. <small>(rug currently pulled. back soon.)</small></dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Kids Menu</h3>
+        <dl>
+          <dt>Lil' Lobster <span class="dots"></span> <em>MP</em></dt><dd>Same lobster. Please do not let ur child name it.</dd>
+        </dl>
+        <h3>Vegan Option</h3>
+        <dl>
+          <dt>Lobster (Apologetic) <span class="dots"></span> <em>MP</em></dt><dd>Lobster, but u say sorry to it first. Steve will watch.</dd>
+        </dl>
+        <h3>Dessert</h3>
+        <dl>
+          <dt>Lobster (Cold) <span class="dots"></span> <em>MP</em></dt><dd>Leftover from ur main. Comes with a spoon for some reason.</dd>
+        </dl>
+        <h3>Drinks</h3>
+        <dl>
+          <dt>Butter (Glass) <span class="dots"></span> <em>$9</em></dt><dd>Warm. Do not ask for ice.</dd>
+          <dt>Butter (Pitcher) <span class="dots"></span> <em>$31</em></dt><dd>For the table. Or for u. We don't judge. (Steve judges.)</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="menu-foot">MP = Market Price. The market is me. I'm not doing well. 🦞 Gerald (tank) is NOT on the menu.</p>
+  </section>
+
+  <!-- features -->
+  <section class="features">
+    <h2>WHY LOBSTAKE™???</h2>
+    <ul>
+      <li>✅ <b>100% Lobster</b> (by volume) (mostly)</li>
+      <li>✅ <b>Boiled FRESH</b> every 47 minutes whether u ordered or not</li>
+      <li class="circled">✅ <b>Hand-drawn by Steve in MS Paint</b> before cooking, so we know what it looked like
+        <svg class="redcircle" viewBox="0 0 400 80" preserveAspectRatio="none" aria-hidden="true"><path d="M30 40C30 10 200 2 360 12 400 18 396 62 330 72 220 82 40 80 18 52 8 34 60 14 120 10" fill="none" stroke="#d00" stroke-width="4" stroke-linecap="round"/></svg>
+        <span class="redarrow" aria-hidden="true">⟵ THIS!!!</span>
+      </li>
+      <li>✅ <b>Blockchain-verified freshness</b> (the blockchain is a notebook. Steve writes "fresh" in it.)</li>
+      <li>✅ <b>Bib included</b> (legally required since The Incident)</li>
+      <li>✅ <b>Gluten free</b> (we haven't checked) (we're scared to)</li>
+      <li>✅ <b>Zero hidden fees</b>. All fees are clearly visible in the Terms, section 4, under my tears</li>
+    </ul>
+  </section>
+
+  <a class="buy" href="#order">I'M READY TO EAT THE CHART →<small>button 3 of 11</small></a>
+
+  <!-- Steve's kitchen ticket (custom gag) -->
+  <section class="steve" id="steve">
+    <h2>MEET CHEF STEVE 👨‍🍳</h2>
+    <div class="steve-bio">
+      <div class="steve-face" aria-hidden="true">👨‍🍳</div>
+      <p>Steve is our Executive Chef, Sous Chef, Waiter, Accountant, Phone Operator and Logo. Steve trained at no culinary schools. Steve draws every lobster in MS Paint before cooking it, then draws ur reservation, then draws the receipt. <b>Steve cannot read.</b> That's why we invented…</p>
+    </div>
+    <div class="ticket">
+      <div class="paint-win small">
+        <div class="paint-title"><span>🖌 ur_order.bmp - Paint</span><span class="paint-ctl">_ □ ✕</span></div>
+        <div class="paint-colors" role="group" aria-label="colors">
+          <button type="button" class="swatch on" style="--c:#000" data-c="#000" aria-label="black"></button>
+          <button type="button" class="swatch" style="--c:#ed1c24" data-c="#ed1c24" aria-label="lobster red"></button>
+          <button type="button" class="swatch" style="--c:#ffc90e" data-c="#ffc90e" aria-label="butter yellow"></button>
+          <button type="button" class="swatch" style="--c:#3f48cc" data-c="#3f48cc" aria-label="blue"></button>
+          <button type="button" class="swatch" style="--c:#22b14c" data-c="#22b14c" aria-label="green (why)"></button>
+          <button type="button" class="paint-clear" id="paintClear">🧽 clear</button>
+        </div>
+        <canvas id="orderCanvas" width="600" height="300" aria-label="drawing area: draw ur order for Steve"></canvas>
+        <div class="paint-status">Draw ur order. Steve will interpret it. Steve's interpretation is final.</div>
+      </div>
+      <button type="button" class="buy as-btn" id="sendSteve">SEND DRAWING TO STEVE →<small>not a buy button, doesn't count</small></button>
+    </div>
+  </section>
+
+  <!-- BUT WAIT -->
+  <section class="wait">
+    <h2 class="butwait">BUT WAIT!!!<br>THERE'S MORE!!!</h2>
+    <p class="center">Order in the next <b class="cd-mirror">01:00</b> and Brayden will throw in these <u>EXCLUSIVE BONUSES</u> absolutely FREE*:</p>
+    <ol class="bonuses">
+      <li><span>🎁 BONUS #1: Disposable Bib <small>(reusable if u believe)</small></span><s>$297</s></li>
+      <li><span>🎁 BONUS #2: The Cracker™ <small>(a nutcracker from Steve's mom's house. she's asking for it back.)</small></span><s>$497</s></li>
+      <li><span>🎁 BONUS #3: Steve's MS Paint portrait of YOUR lobster <small>(.bmp, 24-bit, uncompressed, emotionally)</small></span><s>$1,200</s></li>
+      <li><span>🎁 BONUS #4: Gerald's Backstory, the audiobook <small>(9 hrs, read by Brayden, he cries at hour 6)</small></span><s>$803</s></li>
+      <li><span>🎁 BONUS #5: VIP Discord Access <small>(3 members. 2 are Steve. 1 is a bot that says gm.)</small></span><s>$999</s></li>
+      <li><span>🎁 BONUS #6: A Chair <small>(to sit on, while eating. Industry first.)</small></span><s>$1,201</s></li>
+    </ol>
+    <p class="total">TOTAL VALUE: <s>$4,997</s></p>
+    <div class="starburst"><span>TODAY<br>ONLY</span></div>
+    <p class="payments">3 EASY PAYMENTS OF <mark>$19.99</mark>*</p>
+    <p class="fine">*plus market price, plus gas fees, plus a mandatory tip for Steve (please. he has a family. the family is Gerald.)</p>
+    <a class="buy" href="#order">GIVE ME THE BONUSES AND THE CHAIR →<small>button 4 of 11</small></a>
+  </section>
+
+  <!-- 2nd location fundraiser (backwards progress #3) -->
+  <section class="fund">
+    <h3>🏗 HELP FUND LOBSTAKE™ LOCATION #2 <small>(my car)</small></h3>
+    <div class="fund-bar"><i id="fundFill"></i></div>
+    <p><b id="fundRaised">$4,212</b> raised of $50,000 goal &bull; <span id="fundNote">so close!!!</span></p>
+    <p class="fine">Funds are held in a secure wallet. The seed phrase is on a Post-it on the fridge. The fridge is in Location #1.</p>
+  </section>
+
+  <a class="buy" href="#order">I'D RATHER JUST EAT THE LOBSTER →<small>button 5 of 11</small></a>
+
+  <!-- guarantee -->
+  <section class="guarantee">
+    <div class="badge"><b>100%</b><span>DIAMOND<br>CLAW</span><small>GUARANTEE</small></div>
+    <div>
+      <h3>MY IRONCLAD (CLAWCLAD) GUARANTEE</h3>
+      <p>If u are not 100% satisfied with ur lobster, I will personally give u ur money back**.</p>
+      <p class="fine">**Refunds issued in $LOB tokens. 1 $LOB = $0.0000003. Tokens are locked for 40 years. Lobster must be returned uneaten, alive, and in the same mood it left in.</p>
+    </div>
+  </section>
+
+  <!-- reviews: all Gary T. -->
+  <section class="reviews">
+    <h2>⭐ WHAT OUR CUSTOMERS ARE SAYING ⭐</h2>
+    <p class="center">4.9 ★ average from <b>1,204 reviews</b> by <b>1 reviewer</b></p>
+    <div class="press">AS FEATURED IN: <span>GARY T. MONTHLY</span><span>The Gary Times</span><span>garyt.blogspot</span><span>Gary Weekly (Gary)</span></div>
+    <article class="review"><div class="av">👨</div><div><p class="stars">★★★★★</p><p>"Best lobster I have ever had. Also the only lobster I have ever had. 10/10 would lobster again."</p><p class="who">Gary T. &bull; Portland, ME &bull; <span class="vb">Verified Diner</span></p></div></article>
+    <article class="review"><div class="av">🧔</div><div><p class="stars">★★★★★</p><p>"I came for the lobster. I stayed because the door was locked. Great ambience tho!!"</p><p class="who">Gary T. &bull; also Portland, ME &bull; <span class="vb">Verified Diner</span></p></div></article>
+    <article class="review"><div class="av">👩</div><div><p class="stars">★★★★★</p><p>"My husband Gary T. took me here and it was magical. He is very handsome and smart."</p><p class="who">Mrs. Gary T. (Gary T. in a wig) &bull; <span class="vb">Verified Buyer (bot)</span></p></div></article>
+    <article class="review"><div class="av">🥸</div><div><p class="stars">★★★★★</p><p>"I am a totally new customer and NOT Gary T. Lobster was 5 stars. Brayden is a visionary."</p><p class="who">Yrag T. &bull; Location: Behind U &bull; <span class="vb">Verified Stranger</span></p></div></article>
+    <article class="review"><div class="av">👨</div><div><p class="stars">★★★★☆</p><p>"Took off one star because I have written 1,203 reviews and my hand hurts. Lobster still great."</p><p class="who">Gary T. &bull; Steve's Basement &bull; <span class="vb">Verified Diner</span></p></div></article>
+    <div class="video">
+      <div class="video-box" id="garyVideo" role="button" tabindex="0" aria-label="play video testimonial">
+        <span class="play">▶</span><span class="video-face">🥸</span>
+        <span class="video-cap">VIDEO TESTIMONIAL: Gary T. (in disguise, as Gary T.)</span>
+      </div>
+    </div>
+  </section>
+
+  <a class="buy" href="#order">BOOK ME WHERE GARY SITS →<small>button 6 of 11</small></a>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <details><summary>Do you serve anything other than lobster?</summary><p>No. We tried shrimp once. Steve doesn't want to talk about it. Please don't bring it up around Steve. Or Gerald.</p></details>
+    <details><summary>Why is the progress bar at the top going backwards?</summary><p>It's not going backwards. U are going forwards past it. That's called alpha. Also Steve is erasing ur table with the MS Paint eraser to "get the legs right."</p></details>
+    <details><summary>Is this a rug pull?</summary><p>No. There is no rug. Steve sold the rug to pay for butter. U can't pull what isn't there. 🧠</p></details>
+    <details><summary>Is Gary T. a real person?</summary><p>Gary T. is as real as u or me (Brayden) (Gary T.). Please do not ask Gary T. this question in person. He is fragile. He is me.</p></details>
+    <details><summary>Can I pay in crypto?</summary><p>YES. PLEASE. I mean, we accept $LOB, $SQUID, butter, and exposure. Mostly I just want someone else to be holding $SQUID.</p></details>
+    <details><summary>Is the lobster sustainable?</summary><p>Our lobster is 100% sustainable because we only have the one and we keep sustaining it. Gerald is fine. Gerald is fine.</p></details>
+    <details><summary>What's the dress code?</summary><p>Bib. Just the bib is acceptable. We have had to make that clear in the Terms. (Section 5.)</p></details>
+  </section>
+
+  <a class="buy" href="#order">OK OK I'M CONVINCED →<small>button 7 of 11</small></a>
+
+  <!-- ORDER FORM -->
+  <section class="order" id="order">
+    <h2>🦞 RESERVE UR LOBSTER NOW!!! 🦞</h2>
+    <p class="center">Tables remaining tonight: <b class="tables" id="tablesLeft">3</b> &bull; Timer: <b class="cd-mirror">01:00</b></p>
+    <form id="bookForm" autocomplete="off">
+      <label>Ur Name <small>(for Steve to misspell)</small>
+        <input name="name" required maxlength="24" placeholder="e.g. Gary T.">
+      </label>
+      <div class="row2">
+        <label>Party Size
+          <select name="party">
+            <option>1</option><option selected>2</option><option>4</option><option>6 (we have 1 table)</option><option>1 (me and the lobster)</option>
+          </select>
+        </label>
+        <label>Date
+          <input name="date" type="date" required>
+        </label>
+      </div>
+      <div class="row2">
+        <label>Time
+          <select name="time">
+            <option>5:00 PM</option><option>5:01 PM</option><option>5:02 PM (popular)</option><option selected>7:30 PM</option><option>whenever Steve wakes up</option>
+          </select>
+        </label>
+        <label>How did u hear about us?
+          <select name="heard">
+            <option>Gary T.</option><option>A friend (Gary T.)</option><option>An ad (Gary T. holding a sign)</option><option>Twitter (it's Gary T.'s alt)</option><option>Other (Gary T.)</option>
+          </select>
+        </label>
+      </div>
+      <label>Butter Level: <b id="butterOut">Normal</b>
+        <input type="range" name="butter" id="butter" min="0" max="5" value="1">
+      </label>
+
+      <div class="tos-wrap">
+        <p class="tos-h">TERMS OF SERVICE <small>(please read) (nobody reads) (please)</small></p>
+        <div class="tos" id="tosBox" tabindex="0"></div>
+      </div>
+      <label class="check"><input type="checkbox" name="agree" required> I have read the Terms <small>(and I will check on Brayden)</small></label>
+
+      <button class="buy as-btn" type="submit">YES!!! RESERVE MY LOBSTER NOW →<small>button 8 of 11</small></button>
+      <p class="fine center">🔒 Secured by 256-bit butter encryption. Steve can see ur card number. Steve can't read it though.</p>
+    </form>
+    <div id="bookOut" class="book-out" hidden></div>
+  </section>
+
+  <!-- phone -->
+  <section class="phone">
+    <p>📞 OR CALL NOW:</p>
+    <p class="num">1-800-LOB-STAK</p>
+    <p>Operators are standing by <b>(Steve)</b>. Steve is also cooking. Please call between boils. If Steve does not answer, he is in the walk-in. See Terms, section 7.</p>
+    <a class="buy" href="#order">I DON'T HAVE A PHONE, CLICK HERE →<small>button 9 of 11</small></a>
+  </section>
+
+  <a class="buy small-buy" href="#order">ok last chance (not last) →<small>button 10 of 11</small></a>
+  <a class="buy tiny-buy" href="#order">→<small>button 11 of 11. thank u for counting. no one ever counts.</small></a>
+
+</main>
+
+<footer class="foot">
+  <p><a class="backlink-foot" href="../">← more slop</a> &bull; <button type="button" class="linklike" id="tosLink">Terms of Service (please)</button> &bull; <a href="#steve">Careers (Steve)</a> &bull; <a href="#menu">Menu (it's lobster)</a></p>
+  <p>© 2026 LOBSTAKE™ LLC (LLC pending) (LLC denied). A parody. Not a real restaurant, not financial advice, not culinary advice, barely advice. No lobsters were harmed in the making of this website. Gerald is fine. 🦞</p>
+  <p class="fine">*Results not typical. Lobster may contain lobster. Steve's MS Paint drawings are not legally binding. Gary T. is a paid actor (unpaid) (Brayden).</p>
+  <p class="credit">📺 THIS WEBSITE WAS <mark>SLOPPED BY <a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">@icantcodefyi</a></mark>. he was paid in one (1) lobster. he is still waiting for the lobster. pls hire him so he can buy his own lobster.</p>
+</footer>
+
+</body>
+</html>

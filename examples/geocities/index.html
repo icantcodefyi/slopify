@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--
+  ============================== THE BIBLE ==============================
+  SITE: "Uncle Gary's HOT DOG SHRINE" (Angelfire-dark variant of geocities-1999)
+  FORMAT: obsessive fan shrine to the hotdog. Relics, timeline, guestbook, fan club, webring.
+  CLAIM -> KNOCKOFF: "#1 hotdog resource on the Information Superhighway" -> #1 in Gary's zip code.
+  NARRATOR: Gary, 73, retired from Dunmore Paper Supply (accounts receivable adjacent). His nephew
+    Tyler gave him "Teach Yourself HTML in 24 Hours (1998 ed.)" yesterday. He finished it in 19 hours
+    and has not slept. Follows the 1998 book to the letter. Apologizes for everything.
+  STEVE: Brenda from accounting (Gary's old job). Answers every guestbook entry BY HAND, does the
+    calculator math in pencil, logs relics as fixed assets, invoices the "free" fan club.
+  MASCOT: the hotdog 🌭 (favicon, 3D spinning dog, cursor trail, captcha, Franky the helper, rain).
+  RUNNING GAGS (each pays off in 3+ places):
+    1. Progress bars go BACKWARDS: hero loader, calculator, guestbook (Brenda), footer construction.
+    2. The CTA runs away from the cursor: hero "JOIN", fan club "SIGN ME UP", footer "EMAIL GARY".
+    3. Gary keeps apologizing: banner, copy (.sorry spans), toasts, an "apologies issued" counter.
+  CUSTOM ERA GAGS: ENTER-the-realm splash, NO RIGHT CLICK script, hotdog cursor trail,
+    ballgame.mid player (WebAudio, user-gesture only), Encased Meats Webring, 88x31 wall.
+  ======================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ Uncle Gary's HOT DOG SHRINE ~*~ (sorry)</title>
+<meta name="description" content="The #1 hot dog shrine on the Information Superhighway (in my zip code). Sorry.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%AD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./shrine.css">
+</head>
+<body>
+
+<!-- ============ ENTER THE REALM SPLASH ============ -->
+<div id="splash" role="dialog" aria-label="Enter the shrine">
+  <div class="splash-inner">
+    <div class="splash-dog" aria-hidden="true">🌭</div>
+    <h1 class="fire">ENTER THE BUN REALM</h1>
+    <p class="lime">~*~ a hotdog shrine by Gary ~*~</p>
+    <p class="splash-warn">⚠ WARNING ⚠ this site contains: hotdogs, a MIDI file, strong opinions about buns,
+      and <span class="sorry">apologies</span>. Not reccomended for people who think a hotdog is a sandwich.</p>
+    <div class="splash-btns">
+      <button class="enter-btn" data-enter>ENTER 🌭</button>
+      <button class="enter-btn small" data-enter>enter (sorry)</button>
+    </div>
+    <p class="tiny">Best viewed in Netscape Navigator 4.0 at 800×600. It says so in the book.</p>
+  </div>
+</div>
+
+<!-- ============ NARRATOR BANNER ============ -->
+<div class="gary-banner" role="note">
+  <span class="gary-face" aria-hidden="true">👴</span>
+  <span id="gary-line">Hello. This is Gary. I learned HTML yesterday. Sorry for the website.</span>
+  <span class="sorry-meter">apologies issued: <b data-sorry>0000</b></span>
+</div>
+
+<div class="marquee" aria-label="announcements"><div class="marquee-track">
+  <span>★ WELCOME TO THE #1 HOT DOG SHRINE ON THE INFORMATION SUPERHIGHWAY (in my zip code) ★ A HOTDOG IS NOT A SANDWICH ★ ketchup is allowed here. Chicago readers please look away (sorry) ★ Brenda answers every guestbook entry BY HAND ★ NEW!!! the button moves now (I did not do this) ★ franks come in 10. buns come in 8. WHY ★</span>
+  <span aria-hidden="true">★ WELCOME TO THE #1 HOT DOG SHRINE ON THE INFORMATION SUPERHIGHWAY (in my zip code) ★ A HOTDOG IS NOT A SANDWICH ★ ketchup is allowed here. Chicago readers please look away (sorry) ★ Brenda answers every guestbook entry BY HAND ★ NEW!!! the button moves now (I did not do this) ★ franks come in 10. buns come in 8. WHY ★</span>
+</div></div>
+
+<div class="counter-strip">
+  You are visitor # <span class="odometer" id="hits">000048213</span> to the shrine
+  <span class="sep">|</span>
+  hotdogs Gary has eaten while making this page: <b class="lime" data-creep="7">7</b>
+</div>
+
+<nav class="topnav" aria-label="main">
+  <a href="#home">HOME</a><a href="#about">THE DOG</a><a href="#relics">RELICS</a><a href="#calc">CALCULATOR</a><a href="#guestbook">GUESTBOOK</a><a href="#fanclub">FAN CLUB</a>
+</nav>
+
+<div class="page">
+  <!-- ============ MAIN COLUMN ============ -->
+  <main class="main">
+
+    <section id="home" class="hero panel">
+      <span class="sticker s1">NOT A SANDWICH!!</span>
+      <span class="sticker s2">EST. YESTERDAY</span>
+      <span class="badge s3">100% BEEF*<small>*mostly</small></span>
+
+      <h1 class="fire title">Uncle Gary's<br>HOT DOG SHRINE</h1>
+      <p class="subtitle"><span class="blink new">NEW!</span> a page about the greatest food God ever put in a bun</p>
+
+      <div class="dog3d-wrap">
+        <div class="dog3d" aria-hidden="true"><span>🌭</span></div>
+        <p class="caption">↑ the 3D hotdog. took me 6 hours. <span class="sorry">sorry</span> it is flat on the back.</p>
+      </div>
+
+      <div class="intro">
+        <p>Hello and welcome to my web page. My name is <b>Gary</b>. I am 73 and retired from Dunmore Paper Supply
+          (accounts receivable, adjacent). My nephew Tyler gave me his old book <i>"Teach Yourself HTML in 24 Hours" (1998 edition)</i>.
+          I did it in 19 hours. <span class="sorry">Sorry it took so long.</span></p>
+        <p>This page is about the <span class="rainbow">HOTDOG</span>. I have loved the hotdog since 1958.
+          <span class="sorry">Sorry if the colors are a lot.</span> Tyler says it is "a lot". I can not find where to turn them off.</p>
+        <p class="sig">— Gary (Uncle) 🌭</p>
+      </div>
+
+      <div class="backbar-box">
+        <div id="bar-hero"></div>
+      </div>
+
+      <div class="flee-zone" id="zone-hero">
+        <button class="cta flee" id="cta-hero">JOIN THE HOT DOG FAN CLUB!!! 🌭🌭</button>
+      </div>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="about" class="panel">
+      <h2>ABOUT THE HOTDOG <small>(a summary. <span class="sorry">sorry</span> it is long)</small></h2>
+      <ul class="dog-list">
+        <li>The hotdog is a frank inside a bun. The frank goes <b>IN</b> the bun. I have seen people do it the other way. I will not name them (Tyler).</li>
+        <li>Franks come in packs of <b>10</b>. Buns come in packs of <b>8</b>. I wrote to my congressman about this in 1987. He has not written back. <span class="sorry">Sorry to bring it up again.</span></li>
+        <li>A hotdog is <b class="red">NOT</b> a sandwich. A sandwich has two breads. A hotdog has one bread, folded, like a taco. Is a hotdog a taco? No. <span class="sorry">Sorry.</span> It is a hotdog.</li>
+        <li>Ketchup: allowed. Mustard: encouraged. Relish: the green one. Chicago people put a whole salad and a pickle spear on it, and that is their right as Americans.</li>
+        <li>Hotdog facts on this page verified by Brenda: <b class="lime">2 of 9</b>. She is working on the rest after lunch.</li>
+      </ul>
+
+      <div class="poll" id="poll">
+        <h3>📊 THE BIG QUESTION: Is a hotdog a sandwich?</h3>
+        <div class="poll-btns">
+          <button class="ugly" data-vote="no">NO</button>
+          <button class="ugly" data-vote="no">NO (but louder)</button>
+          <button class="ugly tinyvote" data-vote="yes">yes</button>
+        </div>
+        <div class="poll-res">
+          <div>NO <span class="pbar"><i style="width:100%"></i></span> <b>100%</b></div>
+          <div>yes <span class="pbar"><i style="width:0"></i></span> <b id="yes-count">0%</b></div>
+        </div>
+        <p class="tiny">Votes counted by hand by Brenda. Poll results final. Results were final before the poll.</p>
+      </div>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="relics" class="panel">
+      <h2>★ THE SACRED RELICS ★ <small>(please do not touch the screen)</small></h2>
+      <div class="relics">
+        <figure class="relic"><div class="frame">🌭</div><figcaption><b>The Hotdog I Did Not Eat</b> Little League, 1983. Dropped it. I still think about it. (photo is a recreation)<span class="value">Value: priceless · Brenda: $0.40</span></figcaption></figure>
+        <figure class="relic"><div class="frame">🧻</div><figcaption><b>Napkin, Coney Island, 1971</b> It had mustard on it. I washed it. <span class="sorry">Sorry.</span> I know.<span class="value">Value: priceless · Brenda: $0.00</span></figcaption></figure>
+        <figure class="relic"><div class="frame">🍞</div><figcaption><b>The Special Occasion Bun</b> Saving it for a special occasion since 1996. Hard as a brick now.<span class="value">Logged by Brenda as a fixed asset</span></figcaption></figure>
+        <figure class="relic"><div class="frame">🐕</div><figcaption><b>Biscuit</b> My dachshund. Not a hotdog. But a hot dog in July. He is 14. Good boy. (Not a relic. <span class="sorry">Sorry Biscuit.</span>)<span class="value">Value: good boy</span></figcaption></figure>
+        <figure class="relic"><div class="frame">🧴</div><figcaption><b>The Last Mustard</b> Empty since 12/31/1999. I used it all in case of Y2K. Keeping the bottle in case.<span class="value">Value: sentimental (+deposit)</span></figcaption></figure>
+        <figure class="relic"><div class="frame">📼</div><figcaption><b>VHS: Eating Contest '94</b> Taped over the second half with Matlock. <span class="sorry">Sorry.</span> It was a good episode.<span class="value">Value: be kind rewind</span></figcaption></figure>
+      </div>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="timeline" class="panel">
+      <h2>HOTDOG HISTORY <small>(not fact checked)</small></h2>
+      <ol class="timeline">
+        <li><b>1484</b> Frankfurter invented. In Frankfurt, probably. Vienna says it was them. <span class="sorry">Sorry Vienna</span>, I have to pick one.</li>
+        <li><b>1893</b> Hotdog comes to America. America says "yes".</li>
+        <li><b>1953</b> Gary is born. Not hotdog related but it is my page.</li>
+        <li><b>1983</b> The Dropped Hotdog Incident. (see Relics) (I am fine)</li>
+        <li><b>1999</b> The Mustard Runs Out (Y2K).</li>
+        <li><b>yesterday</b> Gary learns HTML.</li>
+        <li><b>today</b> THIS SHRINE. <span class="blink new">NEW!</span></li>
+        <li><b>tomorrow</b> Brenda says I need to "stop adding things". <span class="sorry">Sorry Brenda.</span></li>
+      </ol>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="calc" class="panel">
+      <h2>🧮 BRENDA'S FRANK-TO-BUN RECONCILIATION CALCULATOR</h2>
+      <p>Franks come in 10. Buns come in 8. Brenda (from accounting, at my old job) made a formula.
+        Type how many people are coming and it tells u how many packs to buy. Brenda does every calculation
+        <b>by hand</b>, so please be patient. And polite. <span class="sorry">Sorry.</span></p>
+      <form id="calc-form" class="calc-form">
+        <label>How many guests? <input type="number" name="guests" min="0" max="999" value="6" inputmode="numeric"></label>
+        <label>Hotdogs per guest
+          <select name="per">
+            <option value="1">1 (normal)</option>
+            <option value="2" selected>2 (American)</option>
+            <option value="3">3 (Fourth of July)</option>
+            <option value="7">7 (Gary)</option>
+          </select>
+        </label>
+        <button class="cta-green" type="submit">RECONCILE!!!</button>
+      </form>
+      <p class="tiny">Brenda calculations left today: <b class="lime" id="credits">3</b> (Brenda leaves at 4:30)</p>
+      <div id="calc-out" class="calc-out" hidden></div>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="guestbook" class="panel">
+      <h2>📖 SIGN MY GUESTBOOK!!! 📖</h2>
+      <p>Every entry is answered <b>BY HAND</b> by <b>Brenda from accounting</b>. Brenda is not paid for this.
+        <span class="sorry">I am so sorry, Brenda.</span></p>
+
+      <form id="gb-form" class="gb-form">
+        <label>Ur name <input name="name" maxlength="40" required placeholder="~*HotDogFan*~"></label>
+        <label>Where r u from <input name="loc" maxlength="40" placeholder="Ohio"></label>
+        <label>Favorite condiment
+          <select name="cond">
+            <option>Mustard</option>
+            <option>Ketchup (controversial)</option>
+            <option>Relish (the green one)</option>
+            <option>Onions</option>
+            <option>a whole salad (Chicago)</option>
+          </select>
+        </label>
+        <label class="wide">Ur message <textarea name="msg" maxlength="400" rows="3" required placeholder="great page gary!!"></textarea></label>
+        <button class="cta-green" type="submit">SIGN IT!!! ✍️</button>
+      </form>
+
+      <div class="entries" id="entries">
+        <article class="entry">
+          <header><b>~*DogLover1964*~</b> from Toledo · Mustard</header>
+          <p>Great page Gary!! the spinning hotdog made me sick but in a good way</p>
+          <div class="brenda"><b>📎 Reply from Brenda (Accounting):</b> Received 10/21. Logged under Expenses: Medical (pending). Please retain your receipt. — Brenda</div>
+        </article>
+        <article class="entry">
+          <header><b>xXFrankFurterXx</b> from ??? · Ketchup (controversial)</header>
+          <p>is this the website for Frankfurt germany</p>
+          <div class="brenda"><b>📎 Reply from Brenda (Accounting):</b> No. Reclassified as misdirected correspondence. — B.</div>
+        </article>
+        <article class="entry">
+          <header><b>Tyler (nephew)</b> from college · none</header>
+          <p>uncle gary pls take this down</p>
+          <div class="brenda"><b>📎 Reply from Brenda (Accounting):</b> Request denied per Gary. Gary says sorry. — Brenda</div>
+        </article>
+        <article class="entry">
+          <header><b>Anonymous</b> from the internet · Relish (the green one)</header>
+          <p>a hotdog IS a sandwich</p>
+          <div class="brenda"><b>📎 Reply from Brenda (Accounting):</b> Your opinion has been entered as a liability. — Brenda</div>
+        </article>
+        <article class="entry">
+          <header><b>Gary</b> from the den · Mustard</header>
+          <p>test</p>
+          <div class="brenda"><b>📎 Reply from Brenda (Accounting):</b> Gary please stop testing the guestbook. This is entry #14. — Brenda</div>
+        </article>
+      </div>
+    </section>
+
+    <div class="flames" aria-hidden="true"><span>🌭</span></div>
+
+    <section id="fanclub" class="panel fanclub">
+      <h2>🌭 THE OFFICIAL HOT DOG FAN CLUB 🌭</h2>
+      <p>Members: <b class="lime" id="members">3</b> (me, Biscuit, Brenda (involuntary))</p>
+      <ul class="benefits">
+        <li>✅ A membership card (it is a picture)</li>
+        <li>✅ Monthly newsletter (Gary will read it to u over the phone)</li>
+        <li>✅ Voting rights on the sandwich question (votes are counted by Brenda) (they do not count)</li>
+        <li>✅ Dues: <s>$4.99</s> <b class="lime">FREE!!!*</b> <small>*Brenda will invoice u anyway</small></li>
+      </ul>
+      <div class="flee-zone" id="zone-club">
+        <button class="cta flee" id="cta-club">SIGN ME UP!!! 🌭</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="side" aria-label="sidebar">
+    <div class="side-box">
+      <h3>~ NAVIGATE ~</h3>
+      <ul class="side-nav">
+        <li><a href="#home">🌭 Home</a></li>
+        <li><a href="#about">🌭 About the Dog</a></li>
+        <li><a href="#relics">🌭 Relics</a></li>
+        <li><a href="#timeline">🌭 History</a></li>
+        <li><a href="#calc">🌭 Calculator</a></li>
+        <li><a href="#guestbook">🌭 Guestbook</a></li>
+        <li><a href="#" data-nolinks>🌭 Links (none yet)</a></li>
+        <li><a href="#" data-viewsource>🌭 View Source</a></li>
+      </ul>
+    </div>
+
+    <div class="side-box">
+      <h3>~ STATUS ~</h3>
+      <p>Gary is: <b id="gary-status" class="lime">ONLINE 🟢</b></p>
+      <p class="tiny">(in the den)</p>
+    </div>
+
+    <div class="side-box midi">
+      <h3>~ NOW PLAYING ~</h3>
+      <p>🎵 <b>ballgame.mid</b> <span class="tiny">(4 KB)</span></p>
+      <div class="midi-ctrl">
+        <button class="ugly" id="midi-play">▶ PLAY</button>
+        <button class="ugly" id="midi-stop">■ STOP</button>
+      </div>
+      <p class="tiny" id="midi-note">"buy me some peanuts and HOTDOGS" (<span class="sorry">sorry</span> if loud)</p>
+    </div>
+
+    <div class="side-box">
+      <h3>~ AWARDS ~</h3>
+      <div class="award">🏆<span>Brenda's Award for Site Excellence 2026</span><small>(nominated by Gary)</small></div>
+    </div>
+
+    <div class="side-box">
+      <h3>~ BUTTONS ~</h3>
+      <div class="b88">
+        <span class="btn88 a">HOTDOG<br>POWERED</span>
+        <span class="btn88 b">I ♥ BUNS</span>
+        <span class="btn88 c">NO<br>SANDWICH</span>
+        <span class="btn88 d">NETSCAPE<br>4.0 NOW!</span>
+        <span class="btn88 e">GARY<br>APPROVED</span>
+        <span class="btn88 f">MADE W/<br>NOTEPAD</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="flames" aria-hidden="true"><span>🌭</span></div>
+  <p class="construction"><span aria-hidden="true">🚧👷</span> UNDER CONSTRUCTION <span aria-hidden="true">👷🚧</span></p>
+  <div class="backbar-box"><div id="bar-foot"></div></div>
+  <p class="tiny">(it was 80% yesterday. I deleted something. <span class="sorry">sorry</span>)</p>
+
+  <div class="webring">
+    <a href="#" data-ring="prev">« prev</a> |
+    <b>🌭 The Encased Meats Webring 🌭</b> |
+    <a href="#" data-ring="random">random</a> |
+    <a href="#" data-ring="next">next »</a>
+  </div>
+
+  <div class="flee-zone small" id="zone-mail">
+    <button class="cta flee mail" id="cta-mail">📬 EMAIL GARY!!!</button>
+  </div>
+
+  <p class="tiny">Best viewed in Netscape Navigator 4.0 at 800×600 with ur reading glasses on.</p>
+  <p class="tiny">© 1999–2026 Gary. All rites reserved. This is a fan page. Not affiliated with any hotdog, sausage, bun or condiment company,
+    real or imagined. All hotdog pictures are emoji (<span class="sorry">sorry</span>). Brenda handles legal. Brenda would like it noted that she is not involved.</p>
+  <p class="credit">✨ <a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">slopped by @icantcodefyi</a> ✨ <span class="tiny">(Tyler's friend. he helped. <span class="sorry">sorry</span> to him also)</span></p>
+  <p><a class="back" href="../">← more slop</a></p>
+</footer>
+
+<script src="./slop.js"></script>
+<script src="./shrine.js"></script>
+</body>
+</html>

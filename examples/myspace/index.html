@@ -1,0 +1,335 @@
+<!doctype html>
+<!--
+  SLOP BIBLE
+  - Product claim: "SlopSpace: a place for friends" → a dating profile for an 1100-watt (lie, 700) office microwave
+    named Mike Rowave who is looking for love, or at least someone who waits for the beep.
+  - Narrator: Brayden, ex-founder of HotPocketDAO (rugged 2022), now Mike's "manager". He time-travelled
+    to 2006 "to get in early". All DMs go thru him. 2% fee. NFA.
+  - Steve: drew every profile pic by hand in MS Paint, mouse only. Steve and Mike are not talking.
+  - Mascot: Mike (CSS-drawn microwave, .mw). Keeps showing up where it shouldn't (Tom's pic, Online Now
+    icon, the nav, the search button, the footer, peeking from the screen edge, his own Top 8).
+  - Running gags (each pays off 3+ times):
+    1. mascot appears where it should not (Tom's pic, nav, Online Now, comments, Top 8 #8, footer, peeker)
+    2. SlopSpace GOLD: the free profile, but gold (gold box, Brayden's pitch, FAQ, comments, chat)
+    3. FAQ where every answer is "no" (FAQ section, chat replies, Add-to-Friends modal, Block User)
+  - Custom era gags: un-pausable profile song (WebAudio hum + BEEP, only after clicking play),
+    Top 8 rearrange drama, microwave-keypad compatibility test, "Mike sightings" peeker.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SlopSpace.com | Mike Rowave's Profile (managed by Brayden)</title>
+<meta name="description" content="SlopSpace profile of Mike Rowave, a microwave looking for love. Parody.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='6' width='30' height='20' rx='2' fill='%23ccc' stroke='%23000' stroke-width='2'/%3E%3Crect x='4' y='9' width='17' height='14' fill='%23222'/%3E%3Crect x='7' y='12' width='11' height='8' fill='%23f90'/%3E%3Crect x='23' y='10' width='5' height='3' fill='%230f0'/%3E%3Crect x='23' y='15' width='5' height='8' fill='%23888'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./myspace.css">
+</head>
+<body>
+<a class="back" href="../">← more slop</a>
+
+<!-- ============ SITE HEADER ============ -->
+<header class="top">
+  <div class="top-inner">
+    <div class="logo">
+      <span class="logo-word">slopspace<span class="logo-dot">.com</span></span>
+      <span class="logo-tag">a place for appliances</span>
+    </div>
+    <form class="search" id="search" role="search">
+      <select aria-label="search type"><option>People</option><option>Appliances</option><option>Music</option><option>Leftovers</option></select>
+      <input type="text" aria-label="search" placeholder="search 4 love (or Mike)">
+      <button type="submit" class="search-btn">Search <span class="mw" aria-hidden="true"></span></button>
+    </form>
+    <div class="top-links"><a href="#" data-noop="help">Help</a> | <a href="#" data-noop="signup">SignUp</a> | <a href="#" data-noop="login">LogIn</a></div>
+  </div>
+  <nav class="nav" aria-label="main">
+    <a href="#">Home</a> | <a href="#" data-noop>Browse</a> | <a href="#" data-noop>Search</a> | <a href="#" data-noop>Invite</a> |
+    <a href="#" data-noop>Film</a> | <a href="#" data-noop>Mail</a> | <a href="#blurbs">Blog</a> | <a href="#" data-noop>Favorites</a> |
+    <a href="#faq">Forum</a> | <a href="#" data-noop>Groups</a> | <a href="#" data-noop>Events</a> | <a href="#" data-noop>Videos</a> |
+    <a href="#player">Music</a> | <a href="#test">Microwave</a> | <a href="#gold" class="nav-gold">GOLD✨</a>
+  </nav>
+</header>
+
+<div class="brayden-banner" role="note">
+  🚀 This profile is <b>MANAGED</b> by Brayden (formerly @BraydenETH). I went back to 2006 to get in early on Mike. All date requests go thru me. 2% fee. <u>NFA</u>. 🚀
+</div>
+
+<main class="page">
+  <!-- ================== LEFT COLUMN ================== -->
+  <aside class="col-left">
+    <h1 class="glitter name">~*~xXx Mike Rowave xXx~*~<span class="gold-badge" hidden>GOLD</span></h1>
+
+    <section class="profile-head">
+      <figure class="pfp" id="pfp">
+        <!-- MS Paint, by Steve, mouse only, 4 hrs -->
+        <svg viewBox="0 0 200 210" shape-rendering="crispEdges" role="img" aria-label="MS Paint drawing of a microwave with emo side bangs, taking an angle selfie">
+          <rect width="200" height="210" fill="#fff"/>
+          <path d="M0 150 L40 140 L38 210 L0 210Z" fill="#ff66cc"/>
+          <path d="M18 62 L178 52 L184 160 L22 170 Z" fill="#c0c0c0" stroke="#000" stroke-width="4" stroke-linejoin="bevel"/>
+          <path d="M32 74 L132 68 L136 150 L35 156 Z" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+          <path d="M44 86 L124 82 L126 140 L46 144 Z" fill="#ff9900"/>
+          <circle cx="102" cy="112" r="7" fill="#fff"/><circle cx="104" cy="113" r="3" fill="#000"/>
+          <path d="M70 128 L80 133 L94 131" stroke="#000" stroke-width="3" fill="none"/>
+          <path d="M28 70 L140 60 L120 76 L108 128 L92 84 L74 120 L62 86 L40 132 Z" fill="#000"/>
+          <path d="M60 64 L96 60" stroke="#0000ff" stroke-width="3"/>
+          <rect x="146" y="74" width="26" height="12" fill="#00ff00" stroke="#000" stroke-width="2"/>
+          <text x="148" y="84" font-family="Courier New, monospace" font-size="10" fill="#000">12:00</text>
+          <g fill="#808080" stroke="#000" stroke-width="1"><rect x="147" y="94" width="7" height="7"/><rect x="158" y="95" width="7" height="7"/><rect x="146" y="105" width="8" height="6"/><rect x="159" y="106" width="6" height="7"/><rect x="148" y="117" width="7" height="7"/><rect x="157" y="118" width="9" height="6"/></g>
+          <rect x="146" y="132" width="22" height="12" fill="#ff0000" stroke="#000" stroke-width="2"/>
+          <path d="M178 14 L184 30 L198 30 L186 38 L192 54 L178 44 L164 54 L170 38 L158 30 L172 30Z" fill="#ffff00" stroke="#000" stroke-width="2"/>
+          <path d="M150 40 L190 6" stroke="#000" stroke-width="5"/>
+          <text x="40" y="196" font-family="Comic Sans MS, cursive" font-size="16" fill="#ff0000">MIKE!!</text>
+          <text x="128" y="200" font-family="Comic Sans MS, cursive" font-size="10" fill="#000">-steve</text>
+        </svg>
+        <figcaption>pic by steve (MS Paint, mouse only, 4 hrs)</figcaption>
+      </figure>
+      <div class="pfp-info">
+        <p class="quote">"hot n spinning 4 u. mmmmmmmm."</p>
+        <p>Microwave<br>19 years old<br><small>(3 in microwave years)</small><br>Break Room, 3rd Floor<br>Ohio<br>United States</p>
+        <p class="online"><span class="mw mw-sm" aria-hidden="true"></span> <b>Online Now!</b></p>
+        <p class="lastlogin">Last Login: 10/22/2006<br><small>clock still says 12:00</small></p>
+      </div>
+    </section>
+
+    <p class="mood"><b>Mood:</b> ⏲️ drained (defrosting) :(<br><b>View My:</b> <a href="#pics">Pics</a> | <a href="#" data-noop="videos">Videos</a></p>
+
+    <section class="box contact" aria-labelledby="contact-h">
+      <h2 class="box-h" id="contact-h">Contacting Mike Rowave</h2>
+      <div class="contact-grid">
+        <button data-act="add">➕ Add to Friends</button>
+        <button data-act="msg">✉️ Send Message</button>
+        <button data-act="fwd">📨 Forward to Friend</button>
+        <button data-act="fav">⭐ Add to Favorites</button>
+        <button data-act="im">💬 Instant Message</button>
+        <button data-act="block">🚫 Block User</button>
+        <button data-act="group">👥 Add to Group</button>
+        <button data-act="rank">🏅 Rank User</button>
+      </div>
+    </section>
+
+    <section class="box url">
+      <h2 class="box-h">SlopSpace URL:</h2>
+      <p>http://www.slopspace.com/mikerowave<br><small>(Brayden owns mikerowave.eth too. its for sale.)</small></p>
+    </section>
+
+    <!-- MUSIC PLAYER (custom gag: can't be paused) -->
+    <section class="box player" id="player" aria-labelledby="player-h">
+      <h2 class="box-h" id="player-h">♫ Mike's Profile Song</h2>
+      <div class="player-body">
+        <div class="album" aria-hidden="true"><span class="mw mw-lg"></span></div>
+        <div class="track">
+          <marquee class="track-name" scrollamount="3">Mike Rowave - Hummmmmmm (feat. The Beep) [nightcore] [My Chemical Romance cover]</marquee>
+          <div class="ptime"><span id="ptime">0:00</span> / <span id="plen">2:00</span></div>
+          <div class="pbar"><i id="pbar"></i></div>
+          <div class="pbtns">
+            <button id="pplay" aria-label="play">▶</button>
+            <button id="ppause" aria-label="pause">❚❚</button>
+            <button id="pstop" class="pstop">STOP/CLEAR</button>
+          </div>
+          <p class="pnote" id="pnote">autoplaying (silently) · click ▶ 4 sound</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="box" aria-labelledby="int-h">
+      <h2 class="box-h" id="int-h">Mike Rowave's Interests</h2>
+      <table class="kv">
+        <tr><th>General</th><td>spinning, humming, being stared at by ppl who think staring makes it faster, plates that fit, the smell of popcorn (not burnt) (it's always burnt)</td></tr>
+        <tr><th>Music</th><td>My Chemical Reaction, Panic! At The Deli, Fall Out Bowl, Hawthorne Heats, The Beep (live, 3x)</td></tr>
+        <tr><th>Movies</th><td>The Notebook (reheated), Pop-Corn Fiction, Hot Fuzz (2007, i'm early), Defrost Gump</td></tr>
+        <tr><th>Television</th><td>Hell's Kitchen (triggering), The O.C. (Office Cooking)</td></tr>
+        <tr><th>Books</th><td>my own manual. nobody else has ever read it.</td></tr>
+        <tr><th>Heroes</th><td>Tom, the inventor of the popcorn button, anyone who covers their soup</td></tr>
+      </table>
+    </section>
+
+    <section class="box" aria-labelledby="det-h">
+      <h2 class="box-h" id="det-h">Mike Rowave's Details</h2>
+      <table class="kv">
+        <tr><th>Status:</th><td>Single (rotating)</td></tr>
+        <tr><th>Here for:</th><td>Dating, Serious Relationships, Reheating</td></tr>
+        <tr><th>Orientation:</th><td>Countertop</td></tr>
+        <tr><th>Hometown:</th><td>a Best Buy clearance aisle</td></tr>
+        <tr><th>Body type:</th><td>0.9 cu ft, a lil dented</td></tr>
+        <tr><th>Ethnicity:</th><td>Stainless Steel (Look)</td></tr>
+        <tr><th>Zodiac Sign:</th><td>Libra (turntable)</td></tr>
+        <tr><th>Smoke / Drink:</th><td>Smokes (only w/ popcorn) / No</td></tr>
+        <tr><th>Children:</th><td>a toaster oven (not mine)</td></tr>
+        <tr><th>Education:</th><td>Hot School</td></tr>
+        <tr><th>Occupation:</th><td>Heat-as-a-Service</td></tr>
+        <tr><th>Income:</th><td>$250,000+ (in MikeCoin) (Brayden holds it)</td></tr>
+        <tr><th>Wattage:</th><td>1100W (lie) (700W)</td></tr>
+      </table>
+    </section>
+
+    <!-- PREMIUM GAG -->
+    <section class="box goldbox" id="gold" aria-labelledby="gold-h">
+      <h2 class="box-h" id="gold-h">✨ SlopSpace GOLD™ ✨</h2>
+      <p class="gold-pitch">Brayden here. Upgrade to <b>GOLD</b> and unlock the premium Mike experience. Same Mike. But gold.</p>
+      <table class="cmp">
+        <tr><th></th><th>Free</th><th class="g">GOLD™</th></tr>
+        <tr><td>Mike's profile</td><td>✔</td><td class="g">✔</td></tr>
+        <tr><td>Mike's love</td><td>✔ (not guaranteed)</td><td class="g">✔ (not guaranteed)</td></tr>
+        <tr><td>Profile song</td><td>can't pause</td><td class="g">can't pause</td></tr>
+        <tr><td>FAQ answers</td><td>no</td><td class="g">no</td></tr>
+        <tr><td>Color</td><td>normal</td><td class="g"><b>GOLD</b></td></tr>
+        <tr><td>Price</td><td>$0</td><td class="g"><span data-creep="49.99">$49.99</span>/mo<br><small>(in MikeCoin)</small></td></tr>
+      </table>
+      <button class="gold-btn" id="gold-btn">⬆ UPGRADE TO GOLD!!!</button>
+      <p class="tiny">*GOLD is the free tier. but gold. Brayden: "it's a different vibe tho"</p>
+    </section>
+
+    <section class="blinkies" aria-label="blinkies">
+      <span class="blinkie b1">rawr means i love u in microwave</span>
+      <span class="blinkie b2">♥ i ♥ BEEPING ♥</span>
+      <span class="blinkie b3">0:01 CLUB (they never wait)</span>
+      <span class="blinkie b4">METAL = DEATH ⚡</span>
+      <span class="blinkie b5">powered by <span class="mw mw-xs"></span></span>
+      <span class="blinkie b6">i survived the office fish of '05</span>
+    </section>
+  </aside>
+
+  <!-- ================== RIGHT COLUMN ================== -->
+  <div class="col-right">
+    <section class="ext">
+      <p><b>Mike Rowave is in your extended network</b></p>
+      <p class="views">Profile Views: <span id="views">0</span></p>
+    </section>
+
+    <section class="box blog">
+      <h2 class="box-h">Mike Rowave's Latest Blog Entry [<a href="#" data-noop="rss">Subscribe to this Blog</a>]</h2>
+      <ul>
+        <li>~*~ 50 THINGS ABOUT ME!!! repost if u dare ~*~ <button class="linkish" id="survey-btn">(view more)</button></li>
+        <li>why do ppl stand there and STARE at me the whole 2 mins <button class="linkish" data-noop="blog">(view more)</button></li>
+        <li>steve drew me with legs again. i don't have legs. <button class="linkish" data-noop="blog">(view more)</button></li>
+      </ul>
+      <ol class="survey" id="survey" hidden>
+        <li>name: Mike Rowave (Brayden wanted "MikeDAO". no.)</li>
+        <li>wattage: 1100. ok 700. ok it says 700 on my back but i FEEL 1100</li>
+        <li>fav food: whatever u forgot about in me 3 days ago</li>
+        <li>biggest fear: forks. spoons r ok. idk why. don't ask</li>
+        <li>what time is it: 12:00. it has been 12:00 since the power went out in 2004. i don't know what time it is. i don't know who i am</li>
+        <li>worst date: someone opened my door at 0:01. didn't even let me finish. didn't even say bye</li>
+        <li>most famous moment: the office fish of 2005. accounting still won't look at me</li>
+        <li>do u like the popcorn button: it's the only button i trust</li>
+        <li>hot on the outside or the inside: outside. the middle is always cold. it's not a metaphor. ok it's a metaphor</li>
+        <li>last thing that made u cry: a burrito wrapped in foil. ⚡⚡</li>
+        <li>…(41 more things. Brayden says the rest are GOLD only)</li>
+      </ol>
+    </section>
+
+    <section class="box blurbs" id="blurbs">
+      <h2 class="box-h">Mike Rowave's Blurbs</h2>
+      <h3>About me:</h3>
+      <p>hi. i'm mike. i'm a microwave. i've been in this break room for 6 yrs and i've seen things. i've warmed up a thousand lunches and not one of them stayed for the beep. 💔</p>
+      <p>i hum when i'm happy. i hum when i'm sad. i hum the whole time actually. it's just how i am.</p>
+      <p>i have a little light inside that turns on when u open me. that's how u know i care.</p>
+      <p class="mgr-note"><b>[MANAGER NOTE]</b> what Mike is trying to say is that he is an <b>undervalued asset</b>. look. i lost everything on HotPocketDAO. but hot pockets taught me one thing: everyone eventually needs a microwave. Mike is the play. ape into his heart. 🚀🚀 — Brayden</p>
+      <h3>Who I'd like to meet:</h3>
+      <p>someone who waits for the beep. someone who covers their soup. someone who doesn't put me on 99:99 and walk away. a nice fridge (not dad). a spoon who is ready to commit.</p>
+      <p><b>no forks.</b> no foil. no "i'll just put it in for 10 min and see". i am not a toaster. i don't need to be told that i am not a toaster, <i>Kevin</i>.</p>
+      <p class="mgr-note"><b>[MANAGER NOTE]</b> also anyone with liquidity. — B</p>
+    </section>
+
+    <!-- DEMO: microwave compatibility test -->
+    <section class="box test" id="test" aria-labelledby="test-h">
+      <h2 class="box-h" id="test-h">💘 Heat Up A Date w/ Mike (compatibility test)</h2>
+      <form class="oven" id="date-form">
+        <div class="oven-door">
+          <div class="oven-window" id="date-out" aria-live="polite">
+            <p class="oven-idle">put something in me ❤<br><small>(not a fork)</small></p>
+          </div>
+        </div>
+        <div class="oven-panel">
+          <div class="oven-display" id="oven-display" aria-label="timer">0:00</div>
+          <input type="hidden" name="time" id="oven-time" value="0">
+          <div class="keypad" id="keypad">
+            <button type="button" data-k="1">1</button><button type="button" data-k="2">2</button><button type="button" data-k="3">3</button>
+            <button type="button" data-k="4">4</button><button type="button" data-k="5">5</button><button type="button" data-k="6">6</button>
+            <button type="button" data-k="7">7</button><button type="button" data-k="8">8</button><button type="button" data-k="9">9</button>
+            <button type="button" data-k="pop" class="kwide">POPCORN</button><button type="button" data-k="0">0</button>
+          </div>
+          <button type="button" class="kclear" id="kclear">STOP/CLEAR</button>
+          <button type="submit" class="kstart">START ❤</button>
+        </div>
+        <div class="oven-fields">
+          <label>ur name: <input name="who" required maxlength="24" placeholder="xXsk8rgrl_92Xx"></label>
+          <label>what r u bringing on the date?
+            <select name="item" id="date-item">
+              <option value="leftovers">leftover pasta (no lid)</option>
+              <option value="burrito">a frozen burrito</option>
+              <option value="popcorn">popcorn (butter)</option>
+              <option value="fish">fish (at the office)</option>
+              <option value="heart">ur heart</option>
+              <option value="grape">a grape cut in half 😳</option>
+              <option value="fork">a fork</option>
+              <option value="foil">a burrito wrapped in foil</option>
+              <option value="nothing">nothing (just vibes)</option>
+            </select>
+          </label>
+          <p class="tiny">dates left today: <b id="credits">3</b> (Brayden is rate-limiting. GOLD has the same limit)</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- FAQ: every answer is no -->
+    <section class="box faq" id="faq" aria-labelledby="faq-h">
+      <h2 class="box-h" id="faq-h">❓ Mike's FAQ (read b4 messaging!!!)</h2>
+      <dl>
+        <dt>can i put a fork in u?</dt><dd>no.</dd>
+        <dt>is the middle of my burrito hot yet?</dt><dd>no.</dd>
+        <dt>can i pause ur profile song?</dt><dd>no.</dd>
+        <dt>r u really 1100 watts?</dt><dd>no.</dd>
+        <dt>can i get GOLD for free?</dt><dd>no.</dd>
+        <dt>is GOLD different from free in any way?</dt><dd>no.</dd>
+        <dt>is Brayden a licensed talent manager?</dt><dd>no.</dd>
+        <dt>is this a rug pull?</dt><dd>no.</dd>
+        <dt>will Steve draw me too?</dt><dd>no.</dd>
+        <dt>r u and Steve ok?</dt><dd>no.</dd>
+        <dt>do u defrost evenly?</dt><dd>no.</dd>
+        <dt>do u know what time it is?</dt><dd>no.</dd>
+        <dt>is the answer to every question on this FAQ "no"?</dt><dd>no.</dd>
+      </dl>
+      <form class="faq-ask" id="faq-ask">
+        <label for="faq-q">ask Mike ur own question:</label>
+        <div><input id="faq-q" maxlength="80" placeholder="will u marry me"><button type="submit">ASK</button></div>
+        <p class="faq-ans" id="faq-ans" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- TOP 8 -->
+    <section class="box friends" id="pics" aria-labelledby="fr-h">
+      <h2 class="box-h" id="fr-h">Mike Rowave's Friend Space</h2>
+      <p class="fr-count"><b>Mike Rowave has <span id="frcount">7</span> friends.</b> <button class="linkish" id="shuffle">(rearrange Top 8)</button></p>
+      <ol class="top8" id="top8"></ol>
+      <p class="tiny">all pics drawn by Steve in MS Paint. Steve is in the Top 8 against Mike's wishes. Steve set it himself.</p>
+    </section>
+
+    <!-- COMMENTS -->
+    <section class="box comments" aria-labelledby="cm-h">
+      <h2 class="box-h" id="cm-h">Mike Rowave's Friends Comments</h2>
+      <p class="cm-count">Displaying <span id="cm-n">8</span> of 1,104 comments (<button class="linkish" data-noop="comments">View All</button> | <button class="linkish" data-goto="cm-form">Add Comment</button>)</p>
+      <div id="wall"></div>
+      <form class="cm-form" id="cm-form">
+        <label for="cm-text"><b>Add Comment:</b> (html allowed!!) (no it isn't)</label>
+        <textarea id="cm-text" maxlength="200" rows="3" placeholder="thx 4 the add!! PC4PC?"></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <p><a href="#" data-noop>About</a> | <a href="#faq">FAQ</a> | <a href="#" data-noop>Terms</a> | <a href="#" data-noop>Privacy</a> | <a href="#" data-noop>Safety Tips</a> | <a href="#gold">GOLD</a> | <a href="../">← more slop</a></p>
+  <p class="credit">~*~ kewl layout codes: <a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">slopped by @icantcodefyi</a> ~*~ (pls hire him, Brayden can't pay him) ~*~</p>
+  <p>©2003-2006 SlopSpace.com. All Rights Reserved. <span class="mw mw-xs" aria-hidden="true"></span> (how did he get down here)</p>
+  <p class="tiny">PARODY. Not affiliated with MySpace, Tom, any real microwave brand, or any real crypto. Mike is fictional. Brayden is, sadly, a type of guy. No real money, wallets, or appliances were harmed.</p>
+</footer>
+
+<!-- the peeker (mascot where it shouldn't be) -->
+<button class="peeker" id="peeker" aria-label="a microwave is peeking at you"><span class="mw mw-lg"></span></button>
+
+<script src="./slop.js" defer></script>
+<script src="./myspace.js" defer></script>
+</body>
+</html>

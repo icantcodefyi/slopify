@@ -1,0 +1,315 @@
+<!doctype html>
+<!--
+  SLOP BIBLE — Unclr (beta)
+  Claim -> knockoff: "a social web 2.0 startup" -> one retired uncle's homepage about himself and 3 hobbies.
+  Narrator: Uncle Dennis, 67, retired from 34 years of insurance, learned HTML yesterday from a 1999
+            library book. His nephew Tyler told him a homepage in 2008 must be "a social web 2.0 startup" and "in beta".
+  Steve: Gary, the neighbor. His garage is "the data center". Uptime = whenever Gary is home.
+  Mascot: Socky the sock 🧦 (lost his pair in 1996). Favicon, Clippy, hobby #1, tag cloud, footer.
+  Running gags:
+    1. GOLD tier = free tier, but gold (header pill, pricing, cookie, guestbook upsell, gold mode, footer)
+    2. Every testimonial is Linda (his wife) (testimonials, social proof ticker, guestbook replies, digg, rating)
+    3. Translated through 5 languages (copy everywhere, the 🌐 Language button, guestbook entries get translated)
+  Custom era gags: wet-floor logo, AJAX star rating w/ Yellow Fade Technique, the widget that never loads,
+    waitlist that goes UP, Digg counter, 5-language "internationalize" button, Gold Mode.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unclr (BETA) — Share Me (Dennis) with friends, socially</title>
+<meta name="description" content="Unclr is the social web 2.0 startup about Me (Dennis). Now with Ajax!!">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./web2.css">
+</head>
+<body>
+
+<a class="back" href="../">← more slop</a>
+
+<div class="notice" id="notice" hidden>
+  <span id="notice-text"></span>
+  <button type="button" id="notice-restore" class="linkbtn">Restore English (beta)</button>
+</div>
+
+<div class="page">
+
+<!-- ============ HEADER ============ -->
+<header class="masthead">
+  <div class="brand">
+    <a href="#top" class="logo" aria-label="Unclr home"><span class="logo-u">Uncl</span><span class="logo-r">r</span></a>
+    <span class="logo-reflect" aria-hidden="true"><span class="logo-u">Uncl</span><span class="logo-r">r</span></span>
+    <span class="beta">BETA</span>
+    <span class="since" data-tr="since 2008 (yesterday)">since 2008 (yesterday)</span>
+  </div>
+  <div class="head-actions">
+    <button type="button" class="pill pill-lang" id="lang-btn">🌐 Language: English ▾</button>
+    <button type="button" class="pill pill-green" id="signup-btn" data-tr="Sign up — it is free of beer!">Sign up — it's free!</button>
+    <button type="button" class="pill pill-gold go-gold">✨ Sign up GOLD — $9.99!</button>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="main">
+  <a href="#top" class="on">Home</a>
+  <a href="#hobbies">My Hobbies (3)</a>
+  <a href="#guestbook">Guestbook 2.0</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#datacenter">Data Center</a>
+  <a href="#linda">Reveiws</a>
+</nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="burst" aria-hidden="true"><span>NEW!<br><small>now with Ajax!!</small></span></div>
+  <div class="hero-copy">
+    <h1 data-tr="Share Uncle Dennis with the friends. Socialistically.">Share <em>Uncle Dennis</em> with friends. Socially.</h1>
+    <p class="lede" data-tr="Unclr permits that you share me with friends, in socially manner, on the web 2.0 which is the internet of second edition.">Unclr lets u share Me (Dennis, 67) with friends, socially, on the web 2.0. It is a startup. It is about me. I am the startup.</p>
+    <p class="htmlnote"><code>&lt;marquee&gt;</code>Welcome to my homepage<code>&lt;/marquee&gt;</code> <small>(Tyler says the marquee does not move in 2008. I have asked Gary to look at it.)</small></p>
+    <div class="hero-ctas">
+      <button type="button" class="bigbtn" id="invite-btn">Request an invite »</button>
+      <span class="waitlist">Invite-only. Waitlist: <b data-creep="4000000" id="waitlist">4,000,000</b> <small>(it goes UP)</small></span>
+    </div>
+    <p class="asseen">As seen on: <b>Linda's Facebook</b> · <b>the church bulletin</b> · <b>Gary's fridge</b></p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="avatar">
+      <span class="face">👴</span>
+      <span class="hat">🧢</span>
+      <span class="sock-mini">🧦</span>
+    </div>
+    <div class="avatar-reflect"><span class="face">👴</span></div>
+    <p class="avatar-cap">Me (Dennis). Photo by Linda.</p>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how">
+  <h2 data-tr="How it is working (3 steps of the ease)">How it works (3 easy steps)</h2>
+  <ol class="steps">
+    <li><span class="dot b">1</span><b data-tr="Arrive">Visit Unclr</b><p>Type <code>www.unclr.biz</code> into the Google. Or the Yahoo. Linda uses the Ask Jeeves.</p></li>
+    <li><span class="dot g">2</span><b data-tr="Read the me">Read about Me</b><p>All the content is about Me (Dennis). This is called "user-generated content". The user is me.</p></li>
+    <li><span class="dot o">3</span><b data-tr="Notify the Linda">Tell Linda u liked it</b><p>She is in the kitchen. She will tell me. This is called "social".</p></li>
+  </ol>
+</section>
+
+<div class="cols">
+<div class="maincol">
+
+<!-- ============ HOBBIES / FEATURES ============ -->
+<section id="hobbies" class="box">
+  <h2 class="boxhead" data-tr="My hobbies are three (3). They are numbered.">My 3 Hobbies <span class="tag-new">2.0</span></h2>
+
+  <article class="hobby">
+    <div class="gicon blue" aria-hidden="true">🧦</div>
+    <div class="hobby-body">
+      <h3 data-tr="Collection of the foot-stockings">Sock Collecting</h3>
+      <p><b>1,204 socks. 0 pairs.</b> I am the #1 sock collector on my street (Gary does not collect). Every sock is catalogued in a spreadsheet that Gary keeps in the data center.</p>
+      <div class="sotm">
+        <div class="sotm-art" aria-hidden="true">🧦</div>
+        <div>
+          <p class="sotm-title">Sock of the Month™</p>
+          <p class="small">Argyle, LEFT, 1994. Partner missing since the dryer incident of 1996. If found pls email.</p>
+          <div class="rating" id="rating" role="group" aria-label="Rate this sock">
+            <span class="rlabel">Rate this sock:</span>
+            <button type="button" data-star="1" aria-label="1 star">★</button><button type="button" data-star="2" aria-label="2 stars">★</button><button type="button" data-star="3" aria-label="3 stars">★</button><button type="button" data-star="4" aria-label="4 stars">★</button><button type="button" data-star="5" aria-label="5 stars">★</button>
+            <span class="rstatus" id="rstatus">avg ★★★★★ (1 vote, Linda)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="hobby">
+    <div class="gicon green" aria-hidden="true">🪙</div>
+    <div class="hobby-body">
+      <h3 data-tr="Detecting of metals at the side of sea">Metal Detecting (at the beach)</h3>
+      <p>Lifetime value of finds: <b>$0.35</b>. Cost of detector: $649. This is called "the long tail".</p>
+      <ul class="finds" id="finds">
+        <li>🍾 bottle cap × 14</li>
+        <li>🔑 Gary's key × 1 <small>(returned)</small></li>
+        <li>🪙 $0.35 <small>(Canadian)</small></li>
+        <li>📟 a smaller metal detector</li>
+      </ul>
+      <button type="button" class="glossbtn green" id="detect-btn">🔊 Detect! (beta)</button>
+      <span class="beep" id="beep" aria-live="polite"></span>
+    </div>
+  </article>
+
+  <article class="hobby">
+    <div class="gicon orange" aria-hidden="true">🐟</div>
+    <div class="hobby-body">
+      <h3 data-tr="The story of the fish (1987), it was big">The Fish Story (1987)</h3>
+      <p>Lake Erie, July 1987. Gary was there. Gary says it was "a normal fish". Gary is wrong. Click to hear how big.</p>
+      <div class="fishtank"><span class="fish" id="fish" aria-hidden="true">🐟</span></div>
+      <button type="button" class="glossbtn orange" id="fish-btn">How big was it?</button>
+      <span class="fishsize" id="fishsize" aria-live="polite">It was 14 inches.</span>
+    </div>
+  </article>
+</section>
+
+<!-- ============ GUESTBOOK (the demo) ============ -->
+<section id="guestbook" class="box">
+  <h2 class="boxhead" data-tr="Book of the guests 2.0 (with Ajax of it)">Guestbook 2.0 <span class="tag-new">AJAX</span></h2>
+  <p class="small">Sign my guestbook! To be international, every entry is <b>automatically translated through 5 languages</b> (English → Deutsch → 日本語 → Português → Suomi → English). Posts left: <b id="credits">3</b> <span class="goldtxt">(GOLD: 3, but gold)</span></p>
+  <form id="gb-form" class="gb-form">
+    <label>Ur name <input name="name" maxlength="40" placeholder="Tyler" required></label>
+    <label>Message <textarea name="msg" maxlength="200" rows="3" placeholder="nice socks uncle dennis" required></textarea></label>
+    <button class="glossbtn green" type="submit">Post it (socially) »</button>
+  </form>
+  <div id="gb-out" class="gb-out" hidden></div>
+  <ul class="gb-list" id="gb-list">
+    <li><b>Tyler (nephew)</b> <span class="when">yesterday</span><p>ok uncle dennis the site is up. pls stop calling me</p></li>
+    <li><b>Gary</b> <span class="when">yesterday</span><p>Of the garage it is hot. Server is make the noise. Is normal?</p><small class="tr-note">translated from English through 5 languages</small></li>
+  </ul>
+</section>
+
+<!-- ============ TESTIMONIALS (all Linda) ============ -->
+<section id="linda" class="box">
+  <h2 class="boxhead" data-tr="What are saying the users">What Users Are Saying</h2>
+  <div class="quotes">
+    <blockquote>"He has been on the computer since Tuesday."<cite>— Linda D., Ohio ★★★★★</cite></blockquote>
+    <blockquote>"The socks are in the drawer now. Thank u Unclr."<cite>— Linda, wife ★★★★★</cite></blockquote>
+    <blockquote>"Dennis please come to dinner."<cite>— L. (verified user) ★★★★★</cite></blockquote>
+    <blockquote>"I am not related to this website."<cite>— Mrs. Dennis ★★★★★</cite></blockquote>
+    <blockquote>"I upgraded to GOLD. It is the same. I checked."<cite>— Linda (GOLD member) ★★★★★</cite></blockquote>
+    <blockquote>"Gary, if you are reading this, tell him dinner is ready."<cite>— Linda, from the kitchen ★★★★★</cite></blockquote>
+  </div>
+  <p class="small center">Unclr has <b>6 reveiws</b> from <b>1 reviewer</b>. 100% satisfaction (of Linda).</p>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="box">
+  <h2 class="boxhead" data-tr="Prices (of the price)">Pricing</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>Unclr Free</h3>
+      <p class="price">$0<small>/mo</small></p>
+      <ul>
+        <li>✔ Read about Me</li>
+        <li>✔ 3 guestbook posts</li>
+        <li>✔ Look at socks</li>
+        <li>✔ Hear the fish story</li>
+        <li>✔ Testimonials (Linda)</li>
+      </ul>
+      <button type="button" class="glossbtn green" id="free-btn">Sign up — free of beer!</button>
+    </div>
+    <div class="plan gold">
+      <span class="ribbon">MOST POPULER (Linda)</span>
+      <h3>✨ Unclr GOLD ✨</h3>
+      <p class="price">$9.99<small>/mo</small></p>
+      <ul>
+        <li>✔ Read about Me</li>
+        <li>✔ 3 guestbook posts</li>
+        <li>✔ Look at socks</li>
+        <li>✔ Hear the fish story</li>
+        <li>✔ Testimonials (Linda)</li>
+        <li>✔ <b>It is gold</b></li>
+      </ul>
+      <button type="button" class="glossbtn gold go-gold">Go GOLD (try free 7 days)</button>
+    </div>
+    <div class="plan ent">
+      <h3>Enterprise</h3>
+      <p class="price">Call Gary</p>
+      <ul>
+        <li>Gary prints my homepage on his printer</li>
+        <li>Gary drives it to ur house</li>
+        <li>Gary reads it to u (no voices)</li>
+        <li>✘ not Sundays (Gary's church)</li>
+      </ul>
+      <button type="button" class="glossbtn blue" id="gary-btn">📞 Call Gary</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATA CENTER ============ -->
+<section id="datacenter" class="box">
+  <h2 class="boxhead" data-tr="Our center of data (it is garage of Gary)">Our Data Center</h2>
+  <div class="dc">
+    <div class="garage" aria-hidden="true">
+      <div class="roof"></div>
+      <div class="garage-in">
+        <span class="rack">🗄️<i class="led" id="led"></i></span>
+        <span class="mower">🚜</span>
+        <span class="fan">🌀</span>
+        <span class="cat">🐈</span>
+      </div>
+      <div class="door" id="door"></div>
+    </div>
+    <dl class="dcstats">
+      <dt>Location</dt><dd>Gary's garage (next door, left)</dd>
+      <dt>Servers</dt><dd>1 (Dell, 2003, "the beige one")</dd>
+      <dt>Cooling</dt><dd>Garage door open + 1 box fan</dd>
+      <dt>Redundancy</dt><dd>a 2nd extension cord</dd>
+      <dt>Security</dt><dd>Gary's cat</dd>
+      <dt>Status</dt><dd id="dcstatus" class="up">● ONLINE (Gary is home)</dd>
+    </dl>
+  </div>
+</section>
+
+</div><!-- /maincol -->
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="side">
+  <div class="sbox about">
+    <h3 class="sbhead">About Me (Dennis)</h3>
+    <p class="htmlnote"><code>&lt;b&gt;</code>Hello. I am Dennis.</p>
+    <p>I am 67 and retired from 34 years of the insurance. Yesterday I learned the HTML from the library book (<i>HTML for Dummies</i>, 1999, coffee stain on page 4). Now I am a webmaster.</p>
+    <p><b>My nephew Tyler says in 2008 a homepage must be "a social web 2.0 startup" and must be "beta". So now I am a startup. I am beta. Linda says I am in the den.</b></p>
+    <p class="small">(I could not find how to turn the bold off.)</p>
+  </div>
+
+  <div class="sbox">
+    <h3 class="sbhead">My Tweets (Twitter)</h3>
+    <div class="ajax" id="never">
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="never-text">Loading…</span>
+    </div>
+  </div>
+
+  <div class="sbox">
+    <h3 class="sbhead">Tag Cloud</h3>
+    <p class="cloud" id="cloud"></p>
+  </div>
+
+  <div class="sbox">
+    <h3 class="sbhead">Visitors (since yesterday)</h3>
+    <p class="odo" id="hits">00000000</p>
+    <p class="small center">4 of these are Linda refreshing</p>
+  </div>
+
+  <div class="sbox web3">
+    <p><b>Web 3.0</b><br>coming soon<br><small>(Tyler is checking)</small></p>
+  </div>
+</aside>
+</div><!-- /cols -->
+
+<!-- ============ BOOKMARK ROW ============ -->
+<section class="bookmarks" aria-label="share">
+  <button type="button" class="digg" id="digg"><span class="digg-n" id="digg-n">412</span><span class="digg-l">diggs</span></button>
+  <span class="share-label">Share this socially:</span>
+  <button type="button" class="bm" data-bm="del.icio.us">del.icio.us</button>
+  <button type="button" class="bm" data-bm="Furl">Furl</button>
+  <button type="button" class="bm" data-bm="StumbleUpon">StumbleUpon</button>
+  <button type="button" class="bm" data-bm="Technorati">Technorati</button>
+  <button type="button" class="bm" data-bm="MySpace">Add to MySpace</button>
+  <button type="button" class="rss" data-bm="RSS" aria-label="RSS feed"></button>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© 2008 Unclr Inc. · Powered by AJAX · Hosted in Gary's Garage · Best viewed in Internet Explorer 7 at 1024×768</p>
+  <p class="small">About · Blog (soon) · API (no) · Jobs (Gary, unpaid) · Privacy (Linda reads everything) · <span class="goldtxt">GOLD members get this same footer, but gold.</span></p>
+  <p class="small">🧦 Unclr is a parody. No socks, uncles, Lindas or Garys were harmed. Not a real startup, not a real Web 2.0 company, no data is collected (Gary can't find the cable).</p>
+  <p class="credit"><a href="https://x.com/icantcodefyi" target="_blank" rel="noopener"><span class="credit-badge">2.0</span> slopped by @icantcodefyi</a> <span class="small">(Tyler says this is "the webmaster". I am the webmaster. He is the other webmaster.)</span></p>
+  <p class="small"><a href="../">← more slop</a></p>
+</footer>
+
+</div><!-- /page -->
+
+<script src="./slop.js" defer></script>
+<script src="./web2.js" defer></script>
+</body>
+</html>

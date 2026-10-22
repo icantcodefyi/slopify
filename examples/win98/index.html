@@ -1,0 +1,334 @@
+<!doctype html>
+<!--
+  SLOP BIBLE — Quackademy 98
+  era: win98-desktop · format: online-course · mascot: rubber duck 🦆
+  claim → knockoff: "The 7-figure Debugging Masterclass" → a $997 course whose entire curriculum
+    is "explain ur bug to a rubber duck". 5 modules. Module 4 lasts 4 seconds.
+  narrator: Tyler, 13, built this on Computer Lab PC #14 in period 4 instead of his fractions worksheet.
+    Mr. Hendricks keeps walking by (custom gag: 🍎 panic button → fake Fractions_Homework.xls).
+  steve: Linda, "the AI". Types 340 WPM. Is definately not Tyler's aunt. Does Enterprise by hand.
+  running gags (each pays off 3+ times):
+    1. every testimonial is Brayden K. (Reviews.doc, social-proof ticker, certificate, Linda, virus scan, BSOD)
+    2. PREMIUM = the free tier but gold (Pricing.xls, Start > Settings, purchase flow, Duck Debugger, System Properties, konami)
+    3. progress bars go backwards (boot splash, course progress, payment processing, defrag, shut down, video buffering)
+  custom era gags: Start menu w/ nested Linda, BSOD Recycle Bin, Flying Ducks screensaver, teacher panic key,
+    maximize = +3px, "It's now safe to turn off your computer".
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quackademy 98 — The $997 Rubber Duck Debugging Masterclass</title>
+<meta name="description" content="Learn the one secret senior engineers don't want u to know: talk to a duck. Only $997. Built by a 13 year old in Computer Lab.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦆</text></svg>">
+<link rel="stylesheet" href="./slop-base.css">
+<link rel="stylesheet" href="./win98.css">
+</head>
+<body>
+
+<!-- ============ BOOT SPLASH (progress bar goes backwards #1) ============ -->
+<div id="boot" aria-label="Starting Quackademy 98">
+  <div class="boot-inner">
+    <div class="boot-logo"><span class="boot-duck">🦆</span><div><b>Quackademy</b><sup>98</sup><small>Premium (Gold) Edition</small></div></div>
+    <div class="boot-bar"><i id="boot-fill"></i></div>
+    <p id="boot-msg">Starting Quackademy 98…</p>
+    <p class="boot-skip">(click to skip. Mr. Hendricks is coming)</p>
+  </div>
+</div>
+
+<!-- ============ DESKTOP ============ -->
+<main id="desktop">
+  <nav class="icons" aria-label="Desktop icons">
+    <button class="icon" data-open="welcome"><span class="ico">📝</span><span class="lbl">Welcome.txt</span></button>
+    <button class="icon" data-open="course"><span class="ico">🦆</span><span class="lbl">Course.exe</span></button>
+    <button class="icon" data-open="pricing"><span class="ico">📊</span><span class="lbl">Pricing.xls</span></button>
+    <button class="icon" data-open="reviews"><span class="ico">📄</span><span class="lbl">Reviews.doc</span></button>
+    <button class="icon" data-open="debugger"><span class="ico">🎨</span><span class="lbl">Duck Debugger</span></button>
+    <button class="icon" data-open="linda"><span class="ico">👩‍💻</span><span class="lbl">Linda.exe (AI)</span></button>
+    <button class="icon" data-open="computer"><span class="ico">🖥️</span><span class="lbl">My Computer</span></button>
+    <button class="icon" data-open="bin"><span class="ico">🗑️</span><span class="lbl">Recycle Bin</span></button>
+    <a class="icon" href="../"><span class="ico">🌐</span><span class="lbl">← more slop</span></a>
+  </nav>
+
+  <div class="watermark" aria-hidden="true">
+    Windows 98 Premium (Gold) · Build 997 · NOT GENUINE<br>
+    Computer Lab PC #14 · property of Lincoln Middle School<br>
+    <a class="credit" href="https://x.com/icantcodefyi" target="_blank" rel="noopener">slopped by @icantcodefyi</a>
+  </div>
+
+  <!-- ---------- Welcome.txt (Notepad) ---------- -->
+  <section class="win" id="w-welcome" data-title="Welcome.txt - Notepad" data-ico="📝" data-x="140" data-y="24" data-w="520" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>S</u>earch</span><span><u>H</u>elp</span></div>
+    <div class="notepad" tabindex="0">
+<b>QUACKADEMY 98 (tm)</b>
+the ONLY online course that teaches Rubber Duck Debugging™
+for the low low price of <b class="price">$997</b>
+
+hi. my name is Tyler. im 13. i made this website in
+Computer Lab (period 4) instead of my fractions worksheet.
+mr hendricks if ur reading this i am almost done with it (lie)
+
+<b>WHAT U WILL LEARN:</b>
+ - when ur code is broken, explain it out loud to a rubber duck
+ - thats it
+ - thats the whole course
+ - there are 5 modules tho
+
+Senior engineers have known this secret for 50 years and
+they DON'T want u to know it (they told me for free).
+
+Ur personal AI tutor, <b>Linda</b>, types 340 words per minute.
+Linda is definately an AI and not my aunt.
+
+&gt; double-click <b>Course.exe</b> to start ur journey
+&gt; double-click <b>Pricing.xls</b> to give me $997
+&gt; do NOT open <b>Recycle Bin</b>
+
+visitors: <span id="hits" class="hits">0</span> (mostly Brayden)
+<span class="blink">_</span></div>
+    <div class="statusbar"><span>Ln 1, Col 1</span><span>Homework: 0% done</span></div>
+  </section>
+
+  <!-- ---------- Course.exe ---------- -->
+  <section class="win" id="w-course" data-title="Quackademy Course Player 98 — Course.exe" data-ico="🦆" data-x="230" data-y="60" data-w="600" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>L</u>essons</span><span><u>R</u>efund (disabled)</span></div>
+    <div class="course">
+      <div class="progress-box sunken">
+        <div class="pb-label">Ur Course Progress: <b id="cp-pct">47%</b></div>
+        <div class="w98bar"><i id="cp-fill" style="width:47%"></i></div>
+        <div class="pb-note" id="cp-note">going down is normal. this is called "unlearning".</div>
+      </div>
+      <div class="course-split">
+        <ul class="listbox sunken" id="modules" role="listbox" aria-label="Modules">
+          <li role="option" tabindex="0" data-m="0">☑ Module 1: Acquiring a Duck <em>12 min</em></li>
+          <li role="option" tabindex="0" data-m="1">☐ Module 2: Duck Placement Theory <em>47 min</em></li>
+          <li role="option" tabindex="0" data-m="2">☐ Module 3: Telling the Duck <em>3 hr 12 min</em></li>
+          <li role="option" tabindex="0" data-m="3">☐ Module 4: The Realization <em>4 sec</em></li>
+          <li role="option" tabindex="0" data-m="4">☐ Module 5: Thanking the Duck <em>$49 add-on</em></li>
+          <li role="option" tabindex="0" data-m="5" class="locked">🔒 BONUS: Two Ducks <em>Enterprise</em></li>
+        </ul>
+        <div class="lesson sunken" id="lesson">
+          <div class="video" id="video"><span>🦆</span><small>lesson video (it's a picture)</small></div>
+          <h3 id="lesson-h">Module 1: Acquiring a Duck</h3>
+          <p id="lesson-p">Go to a store. Find a duck. Duck should be rubber. NOT a real duck (we got a letter).</p>
+        </div>
+      </div>
+      <div class="row-btns">
+        <button class="w98btn" id="play">▶ Play Lesson</button>
+        <button class="w98btn" id="cert">🏆 Get Certificate</button>
+        <button class="w98btn" data-open="pricing">💎 Upgrade</button>
+      </div>
+    </div>
+    <div class="statusbar"><span id="course-status">Ready. (not really)</span><span>Students: 1 (Brayden)</span></div>
+  </section>
+
+  <!-- ---------- Pricing.xls (Excel) ---------- -->
+  <section class="win" id="w-pricing" data-title="Microsoft Excel - Pricing.xls" data-ico="📊" data-x="180" data-y="40" data-w="680" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>I</u>nsert</span><span>F<u>o</u>rmat</span><span><u>D</u>ata (Brayden)</span></div>
+    <div class="formula"><span class="cellref" id="cellref">A1</span><span class="fx">=</span><span class="fbar" id="fbar">click a cell to see the formula (spoiler: its gold)</span></div>
+    <div class="sheet-wrap sunken">
+      <table class="sheet" id="sheet">
+        <thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><th>1</th><td data-f="TIER">&nbsp;</td><td class="h" data-f="&quot;FREE&quot;">FREE</td><td class="h gold" data-f="&quot;FREE&quot; &amp; &quot; but gold&quot;">PREMIUM 💎</td><td class="h" data-f="=ASK(LINDA)">ENTERPRISE</td></tr>
+          <tr><th>2</th><td>Price</td><td data-f="=0">$0</td><td class="gold" data-f="=B2+997  (fanum tax incl.)"><b data-creep="997">$997</b>/once*</td><td data-f="=LINDA.QUOTE()">call Linda</td></tr>
+          <tr><th>3</th><td>Rubber duck</td><td data-f="=1">1 (yellow)</td><td class="gold" data-f="=B3 &amp; GOLD()">1 (gold)</td><td data-f="=LINDA.HOLD(B3)">Linda holds it for u</td></tr>
+          <tr><th>4</th><td>Modules</td><td data-f="=5">5</td><td class="gold" data-f="=B4 &amp; GOLD()">5</td><td data-f="=LINDA.READ(B4, FAST)">Linda reads them to u (fast)</td></tr>
+          <tr><th>5</th><td>"The Realization"</td><td data-f="=TRUE">✔</td><td class="gold" data-f="=B5 &amp; GOLD()">✔</td><td data-f="=LINDA.REALIZE()">Linda realizes it for u</td></tr>
+          <tr><th>6</th><td>Certificate</td><td data-f="=PRINT(&quot;Brayden&quot;)">printed</td><td class="gold" data-f="=B6 &amp; GOLD()">printed (gold font)</td><td data-f="=SIGN(&quot;Brayden&quot;)">signed by Linda (as Brayden)</td></tr>
+          <tr><th>7</th><td>Support</td><td data-f="=LINDA">Linda</td><td class="gold" data-f="=B7 &amp; GOLD()">Linda</td><td data-f="=LINDA*340">Linda, but she drives over</td></tr>
+          <tr><th>8</th><td>Refunds</td><td data-f="=FALSE">no</td><td class="gold" data-f="=B8 &amp; GOLD()">no</td><td data-f="=FALSE  (typed v fast)">no (typed v fast)</td></tr>
+          <tr><th>9</th><td></td><td><button class="w98btn buy" data-tier="free">Get Free</button></td><td class="gold"><button class="w98btn buy goldbtn" data-tier="premium">BUY PREMIUM!!!</button></td><td><button class="w98btn buy" data-tier="enterprise">Call Linda</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">* premium is NOT the same as free. it is gold. that's different. &nbsp;·&nbsp; price goes up every second u hesitate &nbsp;·&nbsp; As seen on: Brayden</p>
+    <div class="sheettabs"><span class="on">Sheet1</span><span>Sheet2 (homework)</span><span>Sheet3</span></div>
+  </section>
+
+  <!-- ---------- Reviews.doc (WordPad) ---------- -->
+  <section class="win" id="w-reviews" data-title="Reviews.doc - WordPad" data-ico="📄" data-x="300" data-y="80" data-w="540" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span>F<u>o</u>rmat</span></div>
+    <div class="toolbar"><select aria-label="font"><option>Comic Sans MS</option><option>Brayden Sans</option></select><b>B</b><i>I</i><u>U</u><span>⬛ ⬛ ⬛</span></div>
+    <div class="doc sunken">
+      <h2>VERIFIED STUDENT REVEIWS ⭐⭐⭐⭐⭐</h2>
+      <p class="avg">Average rating: 4.83 / 5 (6 reviews, verified by Brayden)</p>
+      <blockquote><span class="stars">★★★★★</span>"I explained my bug to the duck and it was fixed. Then I explained my homework to the duck. Still not fixed. 10/10"<cite>— Brayden K., Ohio</cite></blockquote>
+      <blockquote><span class="stars">★★★★★</span>"As a CEO, this is the best $997 I have ever spent. I am also the CEO of the company I spent it at."<cite>— Brayden K., CEO of Brayden K. LLC</cite></blockquote>
+      <blockquote><span class="stars">★★★★★</span>"My son Brayden reccomended this course. I am his mom. Please let him use the computer more."<cite>— Brayden K.'s Mom (typed by Brayden K.)</cite></blockquote>
+      <blockquote><span class="stars">★★★★★</span>"I was skeptical at first. Then I remembered I'm Brayden."<cite>— Brayden K., Professional Skeptic</cite></blockquote>
+      <blockquote class="bad"><span class="stars">★☆☆☆☆</span><s>"the duck did not talk back. this is just a duck"</s><cite>— Kevin (review removed by Brayden K., moderator)</cite></blockquote>
+      <blockquote><span class="stars">★★★★★</span>"Hello. I am not Brayden. Great course."<cite>— Not Brayden (Brayden K.)</cite></blockquote>
+      <p><button class="w98btn" id="add-review">✍ Write a Review</button></p>
+    </div>
+    <div class="statusbar"><span>Page 1 of 1</span><span>👤 Brayden K. is also editing this document</span></div>
+  </section>
+
+  <!-- ---------- Duck Debugger (Paint) — the demo that works badly ---------- -->
+  <section class="win" id="w-debugger" data-title="untitled.bmp - Duck Debugger (Paint)" data-ico="🎨" data-x="200" data-y="50" data-w="620" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>I</u>mage</span><span><u>D</u>uck</span></div>
+    <div class="paint">
+      <div class="tools" aria-hidden="true"><span>✏️</span><span>🪣</span><span>🔍</span><span>🅰️</span><span class="sel">🦆</span><span>🧽</span><span>🖌️</span><span>⭕</span></div>
+      <div class="canvas-wrap sunken">
+        <form id="dbg-form" class="dbg-form">
+          <label for="dbg-in"><b>Step 1:</b> Describe ur bug to the duck. Be honest. The duck can tell.</label>
+          <textarea id="dbg-in" name="bug" rows="3" required placeholder="e.g. my for loop runs one extra time and i dont know w—oh wait"></textarea>
+          <div class="dbg-row"><button class="w98btn" type="submit">🦆 Explain to Duck!!!</button><span>Duck attention span: <b id="dbg-credits">3</b> explanations left</span></div>
+        </form>
+        <div id="dbg-out" class="dbg-out" hidden></div>
+      </div>
+    </div>
+    <div class="palette" aria-hidden="true"><i style="background:#000"></i><i style="background:#808080"></i><i style="background:#800000"></i><i style="background:#808000"></i><i style="background:#ffd700"></i><i style="background:#ffff00"></i><i style="background:#008080"></i><i style="background:#000080"></i><i style="background:#fff"></i><i style="background:#ff0000"></i><i style="background:#00ff00"></i><i style="background:#ff00ff"></i></div>
+    <div class="statusbar"><span>For Help, explain it to the duck.</span><span>997,997 px</span></div>
+  </section>
+
+  <!-- ---------- Linda.exe (the "AI") ---------- -->
+  <section class="win" id="w-linda" data-title="Linda (AI) — Instant Messenger 98" data-ico="👩‍💻" data-x="420" data-y="110" data-w="400" hidden>
+    <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>P</u>eople (Brayden)</span></div>
+    <div class="im-head">👩‍💻 <b>Linda_AI_NOT_AUNT</b> <span class="online">● online (always. she has nothing else)</span></div>
+    <div class="im-log sunken" id="im-log" aria-live="polite">
+      <p class="them"><b>Linda_AI_NOT_AUNT:</b> HELLO i am Linda the artifical intelligence. ask me anything about the course. i will answer very fast.</p>
+    </div>
+    <div class="im-typing" id="im-typing">&nbsp;</div>
+    <form class="im-form" id="im-form">
+      <input id="im-in" placeholder="type here (Linda will read it v fast)" aria-label="message to Linda" autocomplete="off">
+      <button class="w98btn">Send</button>
+    </form>
+    <div class="statusbar"><span>Linda WPM: <b id="wpm">340</b></span><span>Model: Linda-1 (5'4")</span></div>
+  </section>
+
+  <!-- ---------- My Computer / System Properties ---------- -->
+  <section class="win" id="w-computer" data-title="System Properties" data-ico="🖥️" data-x="260" data-y="70" data-w="460" hidden>
+    <div class="tabs"><span class="on">General</span><span>Device Manager</span><span>Hardware Profiles</span><span>Duck</span></div>
+    <div class="sysprops">
+      <div class="sys-art" aria-hidden="true">🖥️<span>🦆</span></div>
+      <div>
+        <p><b>System:</b><br>Microsoft Windows 98<br>Second Edition<br><span class="goldtext">Premium (Gold) Edition*</span><br>4.10.997 A</p>
+        <p><b>Registered to:</b><br>Tyler (age 13)<br>Computer Lab PC #14<br>Lincoln Middle School</p>
+        <p><b>Computer:</b><br>Duck Inside™ Pentium II<br>64.0MB RAM (the school's)<br>2.1 GB free (Brayden's reviews use the rest)</p>
+      </div>
+    </div>
+    <div class="defrag sunken">
+      <div>Defragmenting ur savings… <b id="defrag-pct">0%</b></div>
+      <div class="w98bar"><i id="defrag-fill"></i></div>
+      <div class="defrag-note" id="defrag-note">Click "Defragment" to optimize ur bank account.</div>
+    </div>
+    <div class="row-btns">
+      <button class="w98btn" id="scan">🛡 Scan for Viruses</button>
+      <button class="w98btn" id="defrag">💽 Defragment Savings</button>
+    </div>
+    <p class="fine">* Premium (Gold) Edition is the regular edition but this text is gold. This is a parody. Not affiliated with Microsoft, any real course, or any real Brayden. Please do not send a 13 year old $997.</p>
+  </section>
+</main>
+
+<!-- ============ START MENU ============ -->
+<div id="startmenu" class="startmenu" hidden>
+  <div class="sm-side"><b>Quack</b>98</div>
+  <ul class="sm-list">
+    <li class="sub"><button>📁 Programs <span>▸</span></button>
+      <ul>
+        <li class="sub"><button>🦆 Quackademy <span>▸</span></button>
+          <ul>
+            <li><button data-open="course">🦆 Course.exe</button></li>
+            <li><button data-open="debugger">🎨 Duck Debugger</button></li>
+            <li><button data-open="pricing">📊 Pricing.xls</button></li>
+          </ul>
+        </li>
+        <li class="sub"><button>👩‍💻 Linda <span>▸</span></button>
+          <ul>
+            <li class="sub"><button>👩‍💻 Linda (2) <span>▸</span></button>
+              <ul><li><button data-open="linda">👩‍💻 Linda (fast)</button></li><li><button data-act="linda-slow">🐢 Linda (slow) — not installed</button></li></ul>
+            </li>
+          </ul>
+        </li>
+        <li><button data-act="minesweeper">💣 Minesweeper (every mine is a duck)</button></li>
+      </ul>
+    </li>
+    <li class="sub"><button>📄 Documents <span>▸</span></button>
+      <ul>
+        <li><button data-open="reviews">📄 Reviews.doc</button></li>
+        <li><button data-act="panic">📊 Fractions_Homework.xls (0%)</button></li>
+      </ul>
+    </li>
+    <li class="sub"><button>⚙️ Settings <span>▸</span></button>
+      <ul>
+        <li><button data-act="gold">💎 Go Premium (Gold Theme)</button></li>
+        <li><button data-act="control">🎛️ Control Panel</button></li>
+        <li><button data-act="screensaver">🦆 Screensaver: Flying Ducks</button></li>
+      </ul>
+    </li>
+    <li><button data-act="find">🔍 Find… my homework</button></li>
+    <li><button data-act="help">❓ Help</button></li>
+    <li><button data-act="run">🏃 Run…</button></li>
+    <li class="sep"></li>
+    <li><a href="../">🌐 ← more slop (gallery)</a></li>
+    <li><a href="https://x.com/icantcodefyi" target="_blank" rel="noopener">🐦 slopped by @icantcodefyi</a></li>
+    <li><button data-act="panic">🍎 Teacher is coming!!</button></li>
+    <li><button data-act="shutdown">🔌 Shut Down…</button></li>
+  </ul>
+</div>
+
+<!-- ============ TASKBAR ============ -->
+<footer id="taskbar">
+  <button id="startbtn" class="startbtn" aria-expanded="false"><span>🦆</span><b>Start</b></button>
+  <div class="tasks" id="tasks"></div>
+  <div class="tray">
+    <button id="panicbtn" title="Teacher panic button (hides everything)" aria-label="Teacher panic button">🍎</button>
+    <a href="../" class="tray-link">← more slop</a>
+    <span title="Quackademy is running">🦆</span>
+    <span id="clock">3:47 PM</span>
+  </div>
+</footer>
+
+<!-- ============ FULL-SCREEN OVERLAYS ============ -->
+<div id="bsod" class="bsod" hidden tabindex="-1">
+  <div class="bsod-inner">
+    <p class="bsod-title"> Quackademy </p>
+    <p>A fatal exception 0D has occurred at QUACK:0000997 in VxD RECYCLE(01). The current application will be terminated.</p>
+    <p>The Recycle Bin contained:<br>
+      &nbsp;&nbsp;fractions_homework_FINAL_v3.xls<br>
+      &nbsp;&nbsp;refund_requests (847 items)<br>
+      &nbsp;&nbsp;kevin_review.doc (removed by Brayden)<br>
+      &nbsp;&nbsp;real_duck.wav (quacking)</p>
+    <p>* Press any key to explain this error to the duck.<br>
+      * Press CTRL+ALT+DEL to restart. U will lose any unsaved homework (there is none).</p>
+    <p class="bsod-center">Press any key to continue <span class="blink">_</span></p>
+  </div>
+</div>
+
+<div id="saver" class="saver" hidden>
+  <div class="saver-ducks" aria-hidden="true"></div>
+  <p>Flying Ducks 98™ — move ur mouse to resume being productive (u weren't)</p>
+</div>
+
+<div id="panic" class="panic" hidden>
+  <div class="win panic-win">
+    <div class="titlebar"><span class="tt">📊 Microsoft Excel - Fractions_Homework.xls</span><span class="tbtns"><button class="tb-x" id="panic-close" aria-label="close">✕</button></span></div>
+    <div class="formula"><span class="cellref">B4</span><span class="fx">=</span><span class="fbar">=IDK()</span></div>
+    <div class="sheet-wrap sunken">
+      <table class="sheet">
+        <thead><tr><th></th><th>A</th><th>B</th><th>C</th></tr></thead>
+        <tbody>
+          <tr><th>1</th><td><b>Problem</b></td><td><b>Answer</b></td><td><b>Show ur work</b></td></tr>
+          <tr><th>2</th><td>1/2 + 1/4</td><td>3/4 (i think)</td><td>i explained it to a duck</td></tr>
+          <tr><th>3</th><td>3/5 × 2</td><td>6/10 = duck</td><td>🦆</td></tr>
+          <tr><th>4</th><td>7/8 − 1/3</td><td>idk</td><td>see attached duck</td></tr>
+          <tr><th>5</th><td>simplify 997/1</td><td>$997</td><td>(that's the price of my course)</td></tr>
+          <tr><th>6</th><td>% of homework done</td><td>100%… 80%… 61%…</td><td>(it's going down)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine">👨‍🏫 Mr. Hendricks: "good work Tyler." &nbsp; (click ✕ when he's gone)</p>
+  </div>
+</div>
+
+<div id="shutdown" class="shutdown" hidden>
+  <p id="sd-msg">Windows is shutting down…</p>
+  <div class="w98bar sd-bar"><i id="sd-fill" style="width:0%"></i></div>
+  <p class="sd-sub" id="sd-sub"></p>
+</div>
+
+<script src="./slop.js"></script>
+<script src="./win98.js"></script>
+</body>
+</html>
