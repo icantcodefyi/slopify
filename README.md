@@ -3,7 +3,7 @@
 An agent skill that builds **deliberately terrible, hilarious parody websites**: GeoCities
 homepages, Windows 98 desktops, MySpace profiles, crypto rug-pulls, gen-alpha brainrot feeds and more.
 
-**Live gallery of 12 sites made with this skill → https://slopify.vercel.app**
+**Live gallery of 12 sites made with this skill → https://slopified.vercel.app**
 
 ## Why it doesn't make the same site twice
 
