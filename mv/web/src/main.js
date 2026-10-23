@@ -128,7 +128,7 @@ function startLive(mv) {
     audio.currentTime = audio.ended ? 0 : audio.currentTime;
     audio.play();
   };
-  gate.addEventListener('click', go);
+  gate.addEventListener('click', (e) => { e.stopPropagation(); go(); });
   addEventListener('keydown', (e) => {
     if (e.code === 'Space') { e.preventDefault(); audio.paused ? go() : audio.pause(); }
     if (e.code === 'ArrowRight') audio.currentTime = Math.min(mv.duration, audio.currentTime + 5);
