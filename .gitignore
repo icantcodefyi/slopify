@@ -3,3 +3,8 @@
 .DS_Store
 node_modules/
 .env*
+mv/out/
+examples/mv/
+mv/music/.cache/
+mv/music/out/*.wav
+__pycache__/

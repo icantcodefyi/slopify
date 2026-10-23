@@ -1,7 +1,1 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "buildCommand": "",
-  "installCommand": "",
-  "outputDirectory": "examples"
-}
+{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"installCommand":"","buildCommand":"rm -rf examples/mv && cp -R mv/web examples/mv","outputDirectory":"examples"}

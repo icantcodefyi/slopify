@@ -1,0 +1,95 @@
+{
+ "file": {
+  "samplerate": 48000,
+  "channels": 2,
+  "subtype": "PCM_24",
+  "duration_s": 66.4,
+  "sample_peak_dBFS": -1.2055264744851493,
+  "clipped_samples": 0
+ },
+ "loudness": {
+  "ebur128_I_LUFS": -12.0,
+  "ebur128_LRA_LU": 3.0,
+  "ebur128_truepeak_dBTP": -1.1,
+  "loudnorm_input_i": -12.07,
+  "loudnorm_input_tp": -1.11
+ },
+ "section_LUFS": {
+  "intro": -16.0,
+  "verse": -12.5,
+  "pre": -11.8,
+  "chorus": -11.1,
+  "bridge": -13.6,
+  "final": -11.0,
+  "outro": -12.4
+ },
+ "vocal_stem_LUFS_in_sections": {
+  "verse": -14.1,
+  "chorus": -14.4,
+  "final": -14.5
+ },
+ "stops": {
+  "intro_5.6-6.4_instrument_peak_dBFS": -239.99994107688312,
+  "intro_5.6-6.4_mix_rms_dBFS": -24.268633627316675,
+  "intro_5.95-6.05_mix_peak_dBFS": -21.542899408448655,
+  "intro_4.0-5.6_mix_rms_dBFS(ref)": -16.913528841891644,
+  "break_24.8-25.6_drums_peak_dBFS": -239.99994267697755,
+  "break_24.8-25.6_instrument_peak_dBFS": -239.99994267697755,
+  "break_vocal_rms_dBFS(さ)": -19.457832525987406,
+  "bridge_stop_47.2-47.6_instrument_peak_dBFS": -239.99988406487302
+ },
+ "cue_offsets_ms": {
+  "impact_6.4": 1.0,
+  "chorus_drop_25.6_kick": 1.0,
+  "final_48.0_kick": 1.0,
+  "outro_60.8_kick": -0.0,
+  "verse_6.4_kick": 1.0,
+  "crash_bar5": 2.0,
+  "crash_bar17": 2.0,
+  "crash_bar21": 0.0,
+  "crash_bar31": 2.0,
+  "crash_bar35": -0.0,
+  "crash_bar39": -0.0,
+  "call1_win98_shout": 14.0,
+  "call1_win98_accent": -0.0,
+  "call2_y2k_shout": 8.0,
+  "call2_y2k_accent": 0.0,
+  "call3_crypto_shout": 54.0,
+  "call3_crypto_accent": -0.0,
+  "call4_brainrot_shout": 12.0,
+  "call4_brainrot_accent": -0.0,
+  "call5_geocities_shout": 15.0,
+  "call5_geocities_accent": -0.0,
+  "call6_web2_shout": 8.0,
+  "call6_web2_accent": -0.0,
+  "call7_linkedin_shout": 10.0,
+  "call7_linkedin_accent": 0.0,
+  "call8_gov_shout": 8.0,
+  "call8_gov_accent": -0.0,
+  "call9_flash_shout": 29.0,
+  "call9_flash_accent": -0.0,
+  "call10_forum_shout": 58.0,
+  "call10_forum_accent": -0.0,
+  "call11_myspace_shout": 8.0,
+  "call11_myspace_accent": -0.0,
+  "call12_infomercial_shout": 7.0,
+  "call12_infomercial_accent": 0.0,
+  "mouse_click_0.0": 1.0,
+  "ding_5.6": 0.0,
+  "outro_spoken_61.6": 13.0
+ },
+ "kick_grid": {
+  "detected": 134,
+  "scheduled": 133,
+  "median_abs_ms": 0.0,
+  "max_abs_ms": 0.9999999999998899
+ },
+ "pitch": {
+  "notes_measured": 164,
+  "notes_total": 164,
+  "median_abs_cents_per_note": 1.6567322780812146,
+  "mean_abs_cents_per_note": 2.8078416901807537,
+  "median_abs_cents_per_frame": 2.5254243491515727,
+  "notes_over_50c": []
+ }
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スロッピファイ計画 — the /slopify MV</title>
+<meta name="description" content="A Japanese MMD-style music video for /slopify, rendered live in your browser. Starring スロップちゃん.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=M+PLUS+Rounded+1c:wght@800;900&family=Michroma&display=block" rel="stylesheet">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+</script>
+<style>
+  html, body { margin: 0; height: 100%; background: #07030f; overflow: hidden; color: #fff; font-family: "M PLUS Rounded 1c", "Hiragino Sans", sans-serif; }
+  #stage { position: absolute; inset: 0; margin: auto; aspect-ratio: 16 / 9; width: min(100vw, 177.78vh); height: auto; max-height: 100vh; }
+  #stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #gate { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 40%, rgba(255,92,138,.35), rgba(7,3,15,.92) 60%); cursor: pointer; transition: opacity .4s; text-align: center; }
+  #gate.gone { opacity: 0; pointer-events: none; }
+  #gate h1 { font-family: "Dela Gothic One", sans-serif; font-weight: 400; font-size: clamp(36px, 7vw, 110px); margin: 0; color: #fff; -webkit-text-stroke: 3px #ff3d7f; paint-order: stroke fill; }
+  #gate p { margin: .4em 0 1.4em; font-size: clamp(14px, 1.6vw, 22px); color: #ffd23f; }
+  #gate b { display: inline-block; padding: .6em 1.4em; border: 3px solid #fff; border-radius: 999px; font-size: clamp(16px, 2vw, 26px); opacity: .4; }
+  #gate.ready b { opacity: 1; animation: bob .8s ease-in-out infinite alternate; }
+  #gate small { display: block; margin-top: 1.2em; opacity: .7; font-family: "DotGothic16", monospace; }
+  #gate a { color: #2ee6d6; }
+  @keyframes bob { to { transform: translateY(-6px) scale(1.04); } }
+  #progress { position: fixed; left: 0; bottom: 0; height: 3px; background: #ff5c8a; width: 0; }
+  body.render #gate, body.render #progress { display: none; }
+  @media (prefers-reduced-motion: reduce) { #gate.ready b { animation: none; } }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <canvas id="ov"></canvas>
+  <div id="gate">
+    <div>
+      <h1>スロッピファイ計画</h1>
+      <p>the /slopify MV · feat. スロップちゃん · 66 sec · sound on 🔊</p>
+      <b>▶ クリックで再生 / click to play</b>
+      <small>space = pause · ← → = seek · rendered live in three.js · <a href="../" onclick="event.stopPropagation()">← more slop</a></small>
+    </div>
+  </div>
+</div>
+<div id="progress"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

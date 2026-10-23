@@ -4,7 +4,7 @@
 
 ### An agent skill that builds the **worst websites on the internet**. On purpose.
 
-**[🔴 LIVE GALLERY → slopified.vercel.app](https://slopified.vercel.app)** &nbsp;·&nbsp; **[Install](#install)** &nbsp;·&nbsp; **[How it works](#how-it-works)**
+**[🔴 LIVE GALLERY → slopified.vercel.app](https://slopified.vercel.app)** &nbsp;·&nbsp; **[🎤 The MV](https://slopified.vercel.app/mv/)** &nbsp;·&nbsp; **[Install](#install)** &nbsp;·&nbsp; **[How it works](#how-it-works)**
 
 <img src="assets/preview.gif" alt="slopify showcase" width="720" />
 
@@ -45,6 +45,12 @@ All 12 of these were made by separate AI agents running this skill, one per era.
 | 🪿 | **[DGC Boards](https://slopified.vercel.app/forum/)** | phpBB forum | the goose permit office is a locked forum thread. the fee goes up while u read |
 | 📻 | **[SlopSpace: Mike Rowave](https://slopified.vercel.app/myspace/)** | MySpace 2006 | an 1100W microwave (actually 700W) looking for love. Top 8 drama |
 | 🦞 | **[LOBSTAKE™](https://slopified.vercel.app/infomercial/)** | 3am infomercial funnel | one lobster restaurant. BUT WAIT. there is still one lobster |
+
+## The MV: 「スロッピファイ計画」
+
+There's also a Japanese MMD-style music video. スロップちゃん dances on a concert stage while the LED wall cycles through all 12 sites. The intro is a fake *MikuMikuSlop* editor that freezes (応答なし), then the drop hits. The song is original, sung by a Vocaloid-style voice built from macOS's Kyoko TTS and the WORLD vocoder. There are no model files, samples or footage: the character, choreography, stage, camera, song and voice are all code.
+
+**[▶ Watch it live in your browser → slopified.vercel.app/mv](https://slopified.vercel.app/mv/)** &nbsp;·&nbsp; source and render scripts in [`mv/`](mv/)
 
 ## Install
 
@@ -127,6 +133,7 @@ references/gags.md          gag engine API
 templates/slop.js           gag engine
 templates/slop-base.css     gag styles (CSS-variable themed)
 examples/                   the 12 sites + gallery (deployed to slopified.vercel.app)
+mv/                         the music video: three.js engine, soundtrack + singer, renderer
 ```
 
 ## Rules it follows
