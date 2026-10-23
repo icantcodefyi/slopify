@@ -174,7 +174,7 @@
     if (!root) return p;
     for (let i = 1; i <= names.length; i++) {
       await sleep(500);
-      root.querySelector('.slop-bar i').style.width = `${(i / names.length) * 100}%`;
+      root.querySelector('.slop-bar i').style.clipPath = `inset(0 ${100 - (i / names.length) * 100}% 0 0)`;
       root.querySelector('.slop-vcount').textContent = i * rnd(3, 9);
       root.querySelector('.slop-vlist').insertAdjacentHTML('beforeend', `<li>⚠ ${esc(names[i - 1])}</li>`);
     }
@@ -255,7 +255,7 @@
       out.innerHTML = '<div class="slop-loading"><p></p><div class="slop-bar"><i></i></div></div>';
       for (let i = 0; i < loading.length; i++) {
         out.querySelector('p').textContent = loading[i];
-        out.querySelector('.slop-bar i').style.width = `${Math.min(99, ((i + 1) / loading.length) * 100 - rnd(0, 10))}%`;
+        out.querySelector('.slop-bar i').style.clipPath = `inset(0 ${100 - Math.min(99, ((i + 1) / loading.length) * 100 - rnd(0, 10))}% 0 0)`;
         await sleep(rnd(500, 1100));
       }
       left--;

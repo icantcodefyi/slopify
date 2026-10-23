@@ -77,7 +77,7 @@
 @keyframes slop-bob { to { transform: translateY(-6px) rotate(8deg); } }
 
 .slop-bar { height: 18px; background: #fff; box-shadow: var(--slop-border); margin: .5rem 0; padding: 2px; }
-.slop-bar i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(90deg, #000080 0 10px, transparent 10px 12px); transition: width .4s; }
+.slop-bar i { display: block; height: 100%; clip-path: inset(0 100% 0 0); background: repeating-linear-gradient(90deg, #000080 0 10px, transparent 10px 12px); transition: clip-path .4s; }
 .slop-vlist { max-height: 120px; overflow: auto; padding-left: 1rem; color: #a00; font-family: "Courier New", monospace; font-size: .8rem; }
 
 .slop-captcha { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin: .5rem 0; }
